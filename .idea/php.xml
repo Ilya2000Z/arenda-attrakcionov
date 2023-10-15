@@ -85,7 +85,7 @@
       <path value="$PROJECT_DIR$/wp-content/plugins/wp-asset-clean-up/vendor/matthiasmullie/path-converter" />
     </include_path>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="8.0">
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.2">
     <option name="suggestChangeDefaultLanguageLevel" value="false" />
   </component>
   <component name="PhpStanOptionsConfiguration">
@@ -93,6 +93,7 @@
   </component>
   <component name="PhpUnit">
     <phpunit_settings>
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/wp-content/plugins/rocket-lazy-load/vendor/autoload.php" />
       <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/effbdadmin/vendor/autoload.php" />
     </phpunit_settings>
   </component>
