@@ -1,0 +1,128 @@
+# Translation of Plugins - ReOrder Posts within Categories - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - ReOrder Posts within Categories - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-08-21 12:38:32+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - ReOrder Posts within Categories - Stable (latest release)\n"
+
+#: admin/class-reorder-post-within-categories-admin.php:136
+msgid "Please select the posts from the list below to move."
+msgstr "Пожалуйста, выберите записи из списка ниже для перемещения."
+
+#: admin/partials/reorder-post-within-categories-admin-display.php:120
+msgid "<strong>Caution: </strong>Overriding &apos;orderby&apos; query attribute can have important consequences on WooCommerce listings where themes can display products ranked on various parameters such as price.  This option overrides all other sortings, read these <a href=\"https://wordpress.org/plugins/reorder-post-within-categories/#%0A10.%20my%20posts%20are%20not%20being%20ranked%20on%20the%20front-end%0A\">details</a> to see how to gain a finer control over this."
+msgstr "<strong>Внимание: </strong>Перезапись параметра &apos;orderby&apos; в запросе может значительно повлиять на списки WooCommerce, где темы сортируют товары по разным параметрам, например, по цене.  Эта опция перезапишет все другие сортировки, прочитайте это <a href=\"https://wordpress.org/plugins/reorder-post-within-categories/#%0A10.%20my%20posts%20are%20not%20being%20ranked%20on%20the%20front-end%0A\">руководство</a> чтобы увидеть кака лучше настроить это."
+
+#: admin/partials/reorder-post-within-categories-admin-display.php:124
+msgid "Reset the order!"
+msgstr "Сбросить порядок!"
+
+#: admin/partials/reorder-post-within-categories-admin-display.php:130
+msgid "Reset order"
+msgstr "Сбросить порядок"
+
+#: admin/partials/reorder-post-within-categories-admin-display.php:127
+msgid "reset order for all posts, <strong>careful</strong>, this cannot be undone!"
+msgstr "сбросить сортировку всех записей, <strong>осторожно</strong>, действие необратимо!"
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:119
+msgid "Delete table"
+msgstr "Удалить таблицу"
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:112
+msgid "Check this box to confirm deletion of the custom table from plugin v1.x.  If you are still testing v2.x then conserve the table so that you may downgrade the plugin in case you come across a bug."
+msgstr "Отметьте чекбокс для подтверждения удаления пользовательских таблиц плагина от версии 1.х. Если вы еще тестируете версию 2.х, тогда оставьте пока их для возможности отката на предыдущую версию плагина в случае обнаружения ошибок."
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:109
+msgid "Delete old custom table from plugin v1.x"
+msgstr "Удалить старые пользовательские таблицы от плагина версии 1.х."
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:104
+msgid "Clear all ranking data"
+msgstr "Очистить все сортировочные данные"
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:97
+msgid "Check this box to confirm data deletion."
+msgstr "Отметьте чекбокс для подтверждения удаления данных."
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:94
+msgid "Delete all ranking data and preferences"
+msgstr "Удалить все данные сортировки и настройки."
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:92
+msgid "Enable manual sorting for selected categories"
+msgstr "Включить ручную сортировку для выбранных категорий"
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:25
+msgid "Old custom table deleted."
+msgstr "Старые пользовательские таблицы удалены."
+
+#: admin/partials/reorder-post-within-categories-admin-display.php:31
+msgid "Select"
+msgstr "Выбрать"
+
+#: admin/partials/reorder-post-within-categories-admin-display.php:23
+msgid "Select a taxonomy to sort <b>%s</b>."
+msgstr "Выберите таксономию для сортировки <b>%s</b>."
+
+#: admin/partials/reorder-post-within-categories-admin-display.php:21
+msgid "Manually rank your \"%s\""
+msgstr "Ручная сортировка вашего \"%s\""
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:33
+msgid "A sub-menu is now placed under each post type menu in your dashboard to access the sorting page."
+msgstr "Подменю было добавлено в меню для каждого типа записей в вашей консоли для доступа к странице сортировки."
+
+#: admin/partials/reorder-post-within-categories-admin-display.php:69
+msgid "Greyed-out categories contain too few posts and aren’t available for sorting."
+msgstr "Серые категории недоступны для сортировки так как они содержат недостаточно элементов на данный момент."
+
+#: admin/partials/reorder-post-within-categories-admin-display.php:108
+msgid "Yes"
+msgstr "Да"
+
+#: admin/partials/reorder-post-within-categories-admin-display.php:113
+msgid "No"
+msgstr "Нет"
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:33
+msgid "Options saved."
+msgstr "Изменения сохранены"
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:49
+msgid "Post Types available:"
+msgstr "Доступные типы записей:"
+
+#: admin/class-reorder-post-within-categories-admin.php:784
+msgid "Settings"
+msgstr "Настройки"
+
+#: admin/partials/reorder-post-within-categories-notice-display.php:5
+msgid "First of all, you need to <a href=\"%s\">save your settings for <em>ReOrder Posts in Categories</em></a>."
+msgstr "Вам нужно сохранить настройки <a href=\"%s\"><em>ReOrder Posts in Categories</em></a>"
+
+#: admin/partials/reorder-post-within-categories-admin-display.php:81
+msgid "Use the manual sorting for this category?"
+msgstr "Использовать ручную сортировку для этой рубрики?"
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:47
+msgid "Select the categories you want to manually sort the items. Once you have checked and confirmed this information, a sub-menu will appear under each post type menu."
+msgstr "Выберите рубрики, в которых вы хотите настраивать сортировку вручную. Как только вы отметите и сохраните опции появится новый пункт меню для каждого из отмеченных пунктов."
+
+#: admin/partials/reorder-post-within-categories-settings-display.php:43
+msgid "Re-Order Posts within category"
+msgstr "Сортировка записей внутри рубрики"
+
+#: admin/class-reorder-post-within-categories-admin.php:724
+msgid "ReOrder Post"
+msgstr "ReOrder Post"
+
+#: admin/class-reorder-post-within-categories-admin.php:724
+msgid "ReOrder Post within Categories"
+msgstr "Изменить сортировку записей по рубрикам"

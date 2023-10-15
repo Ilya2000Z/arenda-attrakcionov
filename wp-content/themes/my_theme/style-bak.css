@@ -1,0 +1,1923 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background: url('images/body_bg.jpg') left top repeat;
+}
+
+body {
+    position: relative;
+}
+
+.clear {
+    clear: both;
+    height: 0px;
+    width: 100%;
+    font-size: 0px;
+}
+
+img {
+    border: none;
+    margin: 0px;
+    outline: none;
+}
+
+a {
+    font: normal normal 12px/12px tahoma;
+    color: #676767;
+    text-decoration: underline;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    display: block;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+    font: normal normal 20px/20px tahoma;
+    color: #000;
+}
+
+h2, h3 {
+    display: block;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+    font: normal normal 20px/20px tahoma;
+    color: #000;
+}
+
+p {
+    margin: 0px 0px 15px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: justify;
+    font: normal normal 12px/24px tahoma;
+    color: #676767;
+}
+
+ul {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: #676767;
+    list-style: disc inside;
+}
+
+ul li {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font: normal normal 12px/24px tahoma;
+    color: #676767;
+}
+
+font {
+    font-family: tahoma;
+}
+
+#header {
+    position: relative;
+    z-index: 12;
+    background: -webkit-linear-gradient(#f5f5f5, #ebebeb);
+    background: -o-linear-gradient(#f5f5f5, #ebebeb);
+    background: -moz-linear-gradient(#f5f5f5, #ebebeb);
+    background: linear-gradient(#f5f5f5, #ebebeb);
+    box-shadow: 0px 0px 4px #999;
+    width: 100% !important;
+    min-width: 1000px !important;
+}
+
+#header .stuff {
+    position: relative;
+    margin: 0px auto;
+    width: 100%;
+    min-width: 1200px;
+    max-width: 1200px;
+    height: 130px; /* Изменения №3 (изменил с 130 на 63 (шапка по умолчанию должна быть поднята)    */
+				   /* Изменения №4 (изменил с 63 на 130 (шапка по умолчанию должна быть развернута) */	
+}
+
+/* Изменения №3 (развернутая шапка на главной) */
+#header .stuff_main {
+    position: relative;
+    margin: 0px auto;
+    width: 100%;
+    min-width: 1200px;
+    max-width: 1200px;
+    height: 130px; 
+}
+/* Конец Изменения №3 (развернутая шапка на главной) */
+
+#header.alt {
+    background: -webkit-linear-gradient(#f5f5f5, #ebebeb);
+    background: -o-linear-gradient(#f5f5f5, #ebebeb);
+    background: -moz-linear-gradient(#f5f5f5, #ebebeb);
+    background: linear-gradient(#f5f5f5, #ebebeb);
+}
+
+/*#header.alt .stuff*/
+/*{*/
+/*height: 130px;*/
+/*}*/
+
+#header .stuff a#logo {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    left: 10px;
+    top: 22px; /* Изменения №3 (изменил на с 22 на 3 (шапка по умолчанию свернута) */
+			   /* Изменения №4 (изменил с 3 на 22    (шапка по умолчанию развернута) */	
+    width: 357px;
+    height: 52px;
+    background: url('images/logo.png') left top no-repeat;
+}
+
+/* Конец Изменения №3 (развернутая шапка на главной) */
+#header .stuff_main a#logo {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    left: 10px;
+    top: 22px; 
+    width: 357px;
+    height: 52px;
+    background: url('images/logo.png') left top no-repeat;
+}
+/* Конец Изменения №3 (развернутая шапка на главной) */
+/*#header.alt .stuff a#logo*/
+/*{*/
+/*top: 20px;*/
+/*}*/
+
+#header .stuff #top_menu {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    right: 10px;
+    /*top: 23px; /* Изменения №1 (изменил с 32 на 23) */
+	top: 23px; /* Изменения №3 (изменил с 23 на 0 (шапка по умолчанию свернута) */
+			  /* Изменения №4 (изменил с 0 на 23 (шапка по умолчанию развернута) */	
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+	text-align: center;	
+}
+
+/* Изменения №3 (добавил, шапка на главной развернута */
+#header .stuff_main #top_menu {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    right: 10px;
+    /* top: 23px; /* Изменения №1 (изменил с 32 на 23) */ 
+	top: 23px; 
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+	text-align: center;	
+}
+/* Конец Изменения №3 (добавил, шапка на главной развернута */
+/*#header.alt .stuff #top_menu*/
+/*{*/
+/*right: 210px;*/
+/*}*/
+
+#header .stuff_main #top_menu li, #header .stuff #top_menu li {
+    float: left;
+    margin: 0px 0px 0px 0px;
+//    padding: 15px 7px 8px 10px; /* Изменения №1 (закоментировал) */
+//    border-right: solid 1px #a7a6a6; /* Изменения №1 (закоментировал)*/
+	width: 74px;/* Изменения №1 (добавил)*/
+	height: 58px; /* Изменения №2 (изменил с 85 на 58 - шапка по умолчанию должна быть свернута) */	 */	
+}
+
+
+
+#header .stuff #top_menu li a {
+    display: block;
+    /*height: 12px;*/
+    font: normal 12px/12px tahoma; /* Изменения №1 (изменил размер с 18 на 12)*/
+    color: #676767;
+    text-decoration: none;
+	padding: 67px 7px 8px 10px; /* Изменения №1 (добавил) */ /* Изменения №2 (изменил с 10px на 4px, уменьшаем поля для ссылок-кнопок в шапке и изменил 20px на 34px - шапка по умолчанию свернута) */
+								/* Изменения №4 (изменил с "padding: 34px 7px 8px 10px;" на "padding: 67px 7px 8px 10px;" */	
+	/* Изменения №1 (добавил) */
+//	width: 65px;  /* Изменения №2 (убрал, уменьшаем поля для ссылок-кнопок в шапке) */
+//	height: 65px; /* Изменения №2 (убрал, уменьшаем поля для ссылок-кнопок в шапке) */
+	/* Конец изменения №1 (добавил) */		
+	opacity: 1; /* Изменения №3 (добавил, шапка по умолчанию свернута) */
+				/* Изменения №4 (изменил с 0 на 1, шапка по умолчанию развернута) */
+}
+
+/* Изменения №3 (добавил, шапка на главной) */
+#header .stuff_main #top_menu li a {
+  display: block;
+  /* height: 12px; */
+  font: normal 12px/12px tahoma;
+  color: #676767;
+  text-decoration: none;
+  padding: 67px 7px 8px 10px;
+}
+/* Конец Изменения №3 (добавил, шапка на главной) */
+
+/* Изменения №1 (добавил, логотипы "контакты", "оплата и доставка" и т.п. */
+#header .stuff_main #top_menu li:nth-child(1), #header .stuff #top_menu li:nth-child(1)  { /* 1-ый  */
+	background: url('images/agencies.png') no-repeat center 5px;	
+}
+#header .stuff_main #top_menu li:nth-child(1):hover, #header .stuff #top_menu li:nth-child(1).current-menu-item a, #header .stuff #top_menu li:nth-child(1):hover, #header .stuff #top_menu li:nth-child(1).current-menu-item a { 
+	background: url('images/mask_top_logo.png') no-repeat center top, url('images/agencies.png') no-repeat center 5px;	
+}
+
+#header .stuff_main #top_menu li:nth-child(2), #header .stuff #top_menu li:nth-child(2)  { /* 2-ой  */
+	background: url('images/master_lesson.png') no-repeat center 5px;	
+}
+#header .stuff_main #top_menu li:nth-child(2):hover, #header .stuff_main #top_menu li:nth-child(2).current-menu-item a, #header .stuff #top_menu li:nth-child(2):hover, #header .stuff #top_menu li:nth-child(2).current-menu-item a {  
+	background: url('images/mask_top_logo.png') no-repeat center top, url('images/master_lesson.png') no-repeat center 5px;	
+}
+
+#header .stuff_main #top_menu li:nth-child(3), #header .stuff #top_menu li:nth-child(3)  { /* 3-ий  */
+	background: url('images/buy_and_delivery.png') no-repeat center 5px;	
+}
+#header .stuff_main #top_menu li:nth-child(3):hover, #header .stuff_main #top_menu li:nth-child(3).current-menu-item a, #header .stuff #top_menu li:nth-child(3):hover, #header .stuff #top_menu li:nth-child(3).current-menu-item a { 
+	background: url('images/mask_top_logo.png') no-repeat center top, url('images/buy_and_delivery.png') no-repeat center 5px;	
+}
+
+#header .stuff_main #top_menu li:nth-child(4), #header .stuff #top_menu li:nth-child(4) { /* 4-ый  */
+	background: url('images/phone.png') no-repeat center 5px;	
+}
+#header .stuff_main #top_menu li:nth-child(4):hover, #header .stuff_main #top_menu li:nth-child(4).current-menu-item a, #header .stuff #top_menu li:nth-child(4):hover, #header .stuff #top_menu li:nth-child(4).current-menu-item a {   
+	background: url('images/mask_top_logo.png') no-repeat center top, url('images/phone.png') no-repeat center 5px;	
+}
+/* Конец изменения №1 (добавил, логотипы "контакты", "оплата и доставка" и т.п. */
+
+#header .stuff_main #top_menu li.master-class a, #header .stuff #top_menu li.master-class a {
+    color: #00b409;
+}
+
+#header .stuff_main #top_menu li a:hover, #header .stuff_main #top_menu li.current-menu-item a, #header .stuff #top_menu li a:hover, #header .stuff #top_menu li.current-menu-item a {
+    text-decoration: underline;
+}
+
+#header .stuff_main #contacts {
+    display: block;
+    position: absolute;
+    z-index: 10;
+//    right: 10px;
+	left: 478px; /* Изменения №1 (добавил, вверху right закоментировал) */
+//    top: 84px;
+    top: 3px;/* Изменения №1 (добавил, вверху top закоментировал) */"
+    margin: 0px;
+    padding: 0px;
+}
+
+#header .stuff #contacts_ver2 {
+    display: block;
+    position: absolute;
+    z-index: 10;
+//  right: 10px;
+//	left: 478px; /* Изменения №1 (добавил, вверху right закоментировал) */
+	left: 478px; /* Изменения №3 (изменил с 478 на 380 - шапка по умолчанию должна быть свернута) */
+				 /* Изменения №4 (изменил с 380 на 478 - шапка по умолчанию должна быть развернута) */	
+//  top: 84px;
+    top: 33px;/* Изменения №1 (добавил, вверху top закоментировал) */ /* Изменения №4 (изменил 13 на 33, шапка по умолчанию развернута) */
+//	top: 13px;/* Изменения №3 (изменил с 33 на 13 - шапка по умолчанию должна быть свернута) */
+    margin: 0px;
+    padding: 0px;
+}
+
+/*#header.alt .stuff #contacts*/
+/*{*/
+/*right: 10px;*/
+/*top: 28px;*/
+/*}*/
+
+#header .stuff_main #contacts .item, #header .stuff #contacts_ver2 .item {
+//    float: left; /* Изменения №1 (закоментировал) */
+    height: 29px; /* Изменения №1 (былоо 18, стало 29) */
+    margin: 0px 0px 0px 10px; 
+    padding: 7px 0px 0px 38px; /* Изменения №1 (изменил "0px 0px 0px 25px" на "7px 0px 0px 38px" */
+//    background: url('images/circle.png') left 4px no-repeat; /* Изменения №1 (закоментировал) */
+    font: normal normal 14px/18px tahoma;
+//    color: #676767;
+}
+
+/* Изменения №1 (добавил) */
+#header .stuff_main #contacts #phone, #header .stuff #contacts_ver2 #phone {
+    background: url('images/phone_small.png') left 4px no-repeat;
+}
+
+#header .stuff_main #contacts #email, #header .stuff #contacts_ver2 #email {
+    background: url('images/email_small.png') left 4px no-repeat;
+}
+
+.stuff #email {
+	display:block; /* Изменения №2 (добавил, шапка по умолчанию свернута) */
+				   /* Изменения №4 (изменил с none на block, шапка по умолчанию развернута) */
+}
+
+.stuff_main #email {
+	display:block; /* Изменения №2 (добавил, шапка по умолчанию свернута) */
+}
+/* Конец изменения №1 (добавил) */
+
+/*#header.alt .stuff #contacts .item*/
+/*{*/
+/*float: none;*/
+/*clear: both;*/
+/*margin: 0px 0px 5px 0px;*/
+/*}*/
+
+#header .stuff_main #contacts .item b, #header .stuff #contacts_ver2 .item b {
+    font: normal bold 16px/18px tahoma;
+    color: #676767;
+}
+
+/* Изменения №1 (добавил) */
+#header .stuff_main #contacts #phone b, #header .stuff #contacts_ver2 #phone b {
+	color: rgb(84, 74, 207);
+}
+
+#header .stuff_main #contacts .item a, #header .stuff #contacts_ver2 .item a {
+    font: normal normal 14px/18px tahoma;
+    color: #676767;
+}
+
+#clouds {
+    position: relative;
+    z-index: 9;
+    width: 100% !important;
+    min-width: 1000px !important;
+    height: 455px;
+}
+
+#clouds .item {
+    position: absolute;
+    margin: 0px auto;
+    width: 100%;
+    height: 455px;
+    overflow: hidden;
+}
+
+#clouds .item img {
+    margin-top: -140px;
+    min-width: 100%;
+}
+
+#bg_block {
+    position: relative;
+    z-index: 10;
+    width: 100% !important;
+    min-width: 1000px !important;
+    height: 165px;
+    background: url('images/body_bg.jpg') left top repeat;
+    box-shadow: 0px 0px 4px #999;
+}
+
+#three_blocks {
+    position: relative;
+    z-index: 11;
+    background: #676767;
+    padding: 25px 0px 25px 0px;
+    width: 100% !important;
+    min-width: 1000px !important;
+}
+
+#three_blocks .stuff {
+    margin: -100px auto 0px auto;
+    padding: 20px 0px 0px 0px;
+    width: 100%;
+    min-width: 1000px;
+    max-width: 1170px;
+    overflow: hidden;
+}
+
+#three_blocks .stuff table {
+    margin: 0px auto 0px auto;
+}
+
+#three_blocks .stuff table td {
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 33%;
+}
+
+#three_blocks .stuff table td .block {
+    background: #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    position: relative;
+    padding: 25px 25px 25px 25px;
+    margin: 10px 10px 10px 10px;
+}
+
+#three_blocks .stuff table td .block .number {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    margin-left: -29px;
+    top: -29px;
+    width: 58px;
+    height: 58px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    font: normal normal 24px/58px tahoma;
+    color: #ffffff;
+}
+
+#three_blocks .stuff table td .block .caption {
+    margin: 0px 0px 0px 0px;
+    padding: 15px 0px 10px 0px;
+    text-align: center;
+    font: italic bold 16px/24px 'Bookman Old Style';
+    color: #676767;
+}
+
+#three_blocks .stuff table td .block p {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: justify;
+    font: normal normal 13px/24px tahoma;
+    color: #676767;
+}
+
+#three_blocks .stuff table td .block p a {
+    font: normal normal 13px/24px tahoma;
+    color: #676767;
+}
+
+#three_blocks .stuff table td .block a.more {
+    display: block;
+    float: left;
+    height: 22px;
+    margin: 15px 0px 0px 0px;
+    padding: 0px 45px 0px 30px;
+    font: normal bold 13px/18px tahoma;
+    color: #ffffff;
+    text-decoration: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    background: #676767 url('images/arrow.png') 78px center no-repeat;
+}
+
+#three_blocks .stuff table td .block a.more:hover {
+    text-decoration: underline;
+}
+
+#footer {
+    background: #2c2c2c;
+    width: 100% !important;
+    min-width: 1000px !important;
+}
+
+#footer .stuff {
+    position: relative;
+    margin: 0px auto;
+    padding: 25px 0px 25px 0px;
+    width: 100%;
+    min-width: 1000px;
+    max-width: 1170px;
+}
+
+#footer .stuff table {
+
+}
+
+#footer .stuff table tr td .block {
+    float: left;
+    width: 50%;
+    text-align: left;
+    font: normal normal 12px/18px tahoma;
+    color: #a29f9f;
+}
+
+#footer .stuff table tr td .block a {
+    font: normal normal 12px/18px tahoma;
+    color: #a29f9f;
+}
+
+#footer .stuff table tr td .block a.icon {
+    display: block;
+    float: left;
+    margin: 0px 1px 0px 0px;
+}
+
+#footer .stuff table tr td .block a.icon:hover {
+    opacity: 0.9;
+}
+
+#the_circle {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -304px;
+    top: 65px;
+    width: 608px;
+    height: 608px;
+    background: url('images/the_circle.png') center center no-repeat;
+}
+
+#the_circle img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#banner {
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    width: 260px;
+    height: 260px;
+    margin: -131px 0px 0px -125px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#banner .item {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#the_circle ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#the_circle ul li {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+}
+
+#the_circle ul li a {
+    font: normal bold 13px/14px tahoma;
+    color: #fff;
+    text-decoration: none;
+}
+
+#the_circle ul li a.hovered {
+    text-shadow: 0px 0px 5px #fff;
+}
+
+#the_circle ul li:nth-child(1) {
+    left: 275px;
+    top: 62px;
+}
+
+#the_circle ul li:nth-child(2) {
+    left: 406px;
+    top: 122px;
+}
+
+#the_circle ul li:nth-child(3) {
+    left: 500px;
+    top: 265px;
+}
+
+#the_circle ul li:nth-child(4) {
+    left: 490px;
+    top: 380px;
+}
+
+#the_circle ul li:nth-child(5) {
+    left: 424px;
+    top: 490px;
+}
+
+#the_circle ul li:nth-child(6) {
+    left: 260px;
+    top: 530px;
+}
+
+#the_circle ul li:nth-child(7) {
+    left: 125px;
+    top: 490px;
+}
+
+#the_circle ul li:nth-child(8) {
+    left: 60px;
+    top: 380px;
+}
+
+#the_circle ul li:nth-child(9) {
+    left: 35px;
+    top: 265px;
+}
+
+#the_circle ul li:nth-child(10) {
+    left: 80px;
+    top: 160px;
+}
+
+#the_circle ul li:nth-child(11) {
+    left: 143px;
+    top: 95px;
+}
+
+#content {
+    position: relative;
+    z-index: 10;
+    width: 100% !important;
+    min-width: 1000px !important;
+}
+
+#content .stuff {
+    position: relative;
+    margin: 0px auto;
+    padding: 30px 0px 30px 0px;
+    width: 100%;
+    min-width: 1200px;
+    max-width: 1200px;
+}
+
+.content_table {
+    margin: 0px 10px 0px 10px;
+}
+
+/*Added 15.07.2015 Fixed Left Menu*/
+.content_table tr td.left {
+	height: 450px;
+	min-height: 500px;
+	max-height: 1050px;
+}
+
+.content_table tr td.right {
+  height: 100%;
+  max-height: 1050px;
+  min-height: 1000px;
+}
+/***/
+
+#content .stuff .left {
+    width: 420px;
+}
+
+#content .stuff .right {
+	
+}
+
+
+
+#left_menu {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    list-style: none;
+
+//	position: fixed; /* Изменения №1 */ /* Изменения №3 (убрал, теперь меню опускается с помощью скрипта) */
+}
+
+#left_menu li {
+    margin: 0px 0px 8px 0px;
+    padding: 0px 0px 0px 35px;
+    height: 25px;
+    -moz-border-top-right-radius: 12px;
+    -webkit-border-top-right-radius: 12px;
+    -khtml-border-top-right-radius: 12px;
+    border-top-right-radius: 12px;
+    -moz-border-bottom-right-radius: 12px;
+    -webkit-border-bottom-right-radius: 12px;
+    -khtml-border-bottom-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    cursor: pointer;
+}
+
+#left_menu li:nth-child(1) {
+    width: 230px;
+}
+
+#left_menu li:nth-child(2) {
+    width: 270px;
+}
+
+#left_menu li:nth-child(3) {
+    width: 220px;
+}
+
+#left_menu li:nth-child(4) {
+    width: 200px;
+}
+
+#left_menu li:nth-child(5) {
+    width: 250px;
+}
+
+#left_menu li:nth-child(6) {
+    width: 220px;
+}
+
+#left_menu li:nth-child(7) {
+    width: 200px;
+}
+
+#left_menu li:nth-child(8) {
+    width: 235px;
+}
+
+#left_menu li:nth-child(9) {
+    width: 220px;
+}
+
+#left_menu li:nth-child(10) {
+    width: 260px;
+}
+
+#left_menu li:nth-child(11) {
+    width: 200px;
+}
+
+#left_menu li:nth-child(12) {
+    width: 260px;
+}
+
+#left_menu li.current-menu-item {
+    background-image: url('images/left_menu_li_bg.png');
+    background-position: 12px center;
+    background-repeat: no-repeat;
+}
+
+#left_menu li a {
+    font: normal bold 13px/25px tahoma;
+    color: #fff;
+    text-decoration: none;
+}
+
+#gray_block {
+    position: relative;
+    z-index: 11;
+    background: #676767;
+    padding: 0px 0px 0px 0px;
+    width: 100% !important;
+    min-width: 1000px !important;
+}
+
+#gray_block .stuff {
+    margin: 0px auto 0px auto;
+    padding: 25px 0px 25px 0px;
+    width: 100%;
+    min-width: 1000px;
+    max-width: 1170px;
+}
+
+#gray_block .stuff p {
+    margin: 0px 10px 15px 10px;
+    padding: 0px 0px 0px 0px;
+    text-align: justify;
+    font: normal normal 12px/24px tahoma;
+    color: #eeeeee;
+}
+
+#gray_block .stuff p a {
+    font: normal normal 12px/24px tahoma;
+    color: #eeeeee;
+}
+
+#gray_block .stuff h1 {
+    margin: 0px 0px 15px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+    font: normal bold 15px/24px tahoma;
+    color: #eeeeee;
+}
+
+.h1_bg {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 2px 10px 0px 0px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#gray_block .stuff .h1_bg {
+    margin: 2px 10px 0px 10px;
+}
+
+#content .stuff .right .caption {
+    border-bottom: solid 1px #b8bbbb;
+    padding: 0px 0px 8px 0px;
+    margin: 0px 0px 15px 0px;
+}
+
+#content .stuff .right .caption2 {
+    border-bottom: solid 1px #b8bbbb;
+    padding: 0px 0px 8px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+#content .stuff .right h1 {
+    margin: 0px 0px 15px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+    font: normal bold 18px/24px tahoma;
+    color: #676767;
+}
+
+#content .stuff .right .caption h1, #content .stuff .right .caption2 h1 {
+    margin: 0px 0px 0px 0px;
+}
+
+.items_list {
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
+}
+
+.items_list .item {
+    float: left;
+    margin: 0px 16px 40px 0px;
+    padding: 0px 0px 0px 0px;
+    max-width: 170px;
+}
+
+.items_list .item:nth-child(4n) {
+    margin-right: 0px !important;
+}
+
+@media screen and (max-width: 1184px) {
+    .items_list .item:nth-child(4n) {
+        margin-right: 16px !important;
+    }
+
+    .items_list .item:nth-child(3n) {
+        margin-right: 0px !important;
+    }
+}
+
+.items_list .item .pic {
+    width: 164px;
+    height: 164px;
+    overflow: hidden;
+    border: solid 3px #fff;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.items_list .item .pic a {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.items_list .item .pic img {
+    width: 164px;
+    height: 164px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.items_list .item .cpt {
+    margin: 10px 0px 0px 0px;
+    padding: 0px 0px 0px 30px;
+    min-height: 14px;
+    max-width: 170px;
+}
+
+.items_list .item .cpt span {
+    display: block;
+    float: left;
+    margin: 1px 7px 0px 0px;
+    width: 12px;
+    height: 12px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.items_list .item .cpt a {
+    /*display: block;
+    float: left;*/
+    height: 14px;
+    font: normal bold 14px/14px tahoma;
+    color: #676767;
+    text-decoration: none;
+}
+
+.items_list .item .cpt a:hover {
+    text-decoration: underline;
+}
+
+#top_menu2 {
+    display: table;
+    margin: -13px 0px 15px 0px;
+    padding: 0px 0px 0px 0px;
+    list-style: none;
+    width: 100%;
+    min-height: 24px;
+}
+
+#top_menu2 li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px 0px 0px 0px;
+    min-height: 24px;
+    cursor: pointer;
+}
+
+#top_menu2 li a {
+    display: block;
+    font: normal bold 12px/24px tahoma;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#top_menu2 {
+
+}
+
+#top_menu2 li:first-child a {
+    -moz-border-top-left-radius: 12px;
+    -webkit-border-top-left-radius: 12px;
+    -khtml-border-top-left-radius: 12px;
+    border-top-left-radius: 12px;
+    -moz-border-bottom-left-radius: 12px;
+    -webkit-border-bottom-left-radius: 12px;
+    -khtml-border-bottom-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+#top_menu2 li:last-child a {
+    -moz-border-top-right-radius: 12px;
+    -webkit-border-top-right-radius: 12px;
+    -khtml-border-top-right-radius: 12px;
+    border-top-right-radius: 12px;
+    -moz-border-bottom-right-radius: 12px;
+    -webkit-border-bottom-right-radius: 12px;
+    -khtml-border-bottom-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+#top_menu2 li a:hover, #top_menu2 li.current-post-ancestor a {
+    text-decoration: underline;
+}
+
+#top_menu2 li.current-post-ancestor a {
+    margin-top: -24px;
+}
+
+#content .stuff .left2 {
+    /*width: 545px;*/
+    position: relative;
+    z-index: 6;
+    min-width: 545px !important;
+    max-width: 615px !important;
+}
+
+#content .stuff .right2 {
+    position: relative;
+    z-index: 5;
+    padding-right: 10px;
+}
+
+#item_block {
+    position: relative;
+    z-index: 11;
+    background: #676767;
+    padding: 0px 0px 0px 0px;
+    width: 100% !important;
+    min-width: 1000px !important;
+}
+
+#item_block .stuff {
+    margin: 0px auto 0px auto;
+    padding: 25px 0px 25px 0px;
+    width: 100%;
+    min-width: 1000px;
+    max-width: 1170px;
+}
+
+#item_block .stuff table {
+    margin: 0px 10px 0px 10px;
+}
+
+.item_table {
+    width: 100%;
+}
+
+#item_block .stuff .left {
+    width: 510px;
+}
+
+#item_block .stuff .left iframe {
+    width: 510px !important;
+}
+
+#item_block .stuff .right {
+    padding: 0px 0px 0px 35px;
+}
+
+#item_block .stuff p {
+    margin: 0px 0px 15px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: justify;
+    font: normal normal 12px/24px tahoma;
+    color: #eeeeee;
+}
+
+#item_block .stuff p a {
+    font: normal normal 12px/24px tahoma;
+    color: #eeeeee;
+}
+
+#item_block .stuff h1 {
+    margin: 0px 0px 15px 0px;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+    font: normal bold 15px/24px tahoma;
+    color: #eeeeee;
+}
+
+#breadcrumbs {
+    margin: 0px 0px 15px 0px;
+    font: normal normal 12px/24px tahoma;
+    color: #363535;
+}
+
+#breadcrumbs b {
+    font: normal normal 12px/24px tahoma;
+    color: #363535;
+}
+
+#breadcrumbs span {
+    margin: 0px 0px 0px 0px;
+    font: normal normal 12px/24px tahoma;
+    color: #363535;
+}
+
+#breadcrumbs span.current {
+    color: #676767;
+}
+
+#breadcrumbs span a {
+    font: normal normal 12px/24px tahoma;
+    color: #363535;
+    text-decoration: none;
+    border-bottom: solid 2px #aeaeae;
+}
+
+#breadcrumbs span a:hover {
+    border-bottom: solid 0px #aeaeae;
+}
+
+#pics {
+    margin: 10px 0px 0px 0px;
+    position: relative;
+    height: 580px;
+    background: url('images/pics_bg.png') 5px 75px no-repeat;
+}
+
+#pics .big_one {
+    position: absolute;
+    z-index: 10;
+    left: 10px;
+    top: 40px;
+    width: 360px;
+    height: 360px;
+    overflow: hidden;
+    border: solid 3px #fff;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+    background: #fff url('images/ajax-loader.gif') center center no-repeat;
+}
+
+#pics .big_one .over {
+    position: absolute;
+    z-index: 10;
+    left: 0px;
+    top: 0px;
+    width: 360px;
+    height: 360px;
+    overflow: hidden;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+    display: none;
+}
+
+#pics .big_one img {
+    width: 360px;
+    height: 360px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#pics .previews {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#pics .previews li {
+    position: absolute;
+    z-index: 10;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border: solid 3px #fff;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+    background: #fff url('images/ajax-loader.gif') center center no-repeat;
+    cursor: pointer;
+}
+
+#pics .previews li:nth-child(1) {
+    left: 360px;
+    top: 0px;
+}
+
+/* Изменения №2 (круг "смотреть все видео") */
+#pics .previews li:nth-child(1) + #ring_button_gallery {
+	left:420px;
+	top: 180px;
+}
+/* Конец изменения №2 (круг "смотреть все видео") */
+
+#pics .previews li:nth-child(2) {
+    left: 420px;
+    top: 180px;
+}
+
+/* Изменения №2 (круг "смотреть все видео") */
+#pics .previews li:nth-child(2) + #ring_button_gallery {
+	left:370px;
+	top: 360px;
+}
+/* Конец изменения №2 (круг "смотреть все видео") */
+
+#pics .previews li:nth-child(3) {
+    left: 370px;
+    top: 360px;
+}
+
+/* Изменения №2 (круг "смотреть все видео") */
+#pics .previews li:nth-child(3) + #ring_button_gallery {
+	left:210px;
+	top: 460px;
+}
+/* Конец изменения №2 (круг "смотреть все видео") */
+
+#pics .previews li:nth-child(4) {
+    left: 210px;
+    top: 460px;
+}
+
+/* Изменения №2 (круг "смотреть все видео") */
+#pics .previews li:nth-child(4) + #ring_button_gallery {
+	left: 10px;
+	top: 425px;
+}
+/* Конец изменения №2 (круг "смотреть все видео") */
+
+//#pics .previews li:nth-child(5) {
+//    left: 10px;
+//    top: 440px;
+//}
+
+#pics .previews li img {
+    width: 120px;
+    height: 120px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#overlay {
+    position: fixed;
+    z-index: 999;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    display: none;
+}
+
+#popup {
+    position: fixed;
+    z-index: 9999;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#popup tr td img {
+    max-width: 900px;
+    max-height: 600px;
+}
+
+h1.alt {
+    display: block;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 5px 0px;
+    text-align: left;
+    font: normal bold 22px/35px tahoma;
+    color: #676767;
+    border-bottom: solid 1px #676767;
+}
+
+.item_stuff {
+    margin: 0px 0px 0px 0px;
+}
+
+.item_stuff tr td .l {
+    margin: 20px 10px 0px 0px;
+    padding: 0px 20px 20px 20px;
+    min-height: 262px;
+    //background: #f67369; /* Изменения №3 (закоментировал, цвет определяется jpg) */
+    position: relative;
+    font: normal normal 18px/24px tahoma;
+    color: #ffffff;
+}
+
+.item_stuff tr td .l .call {
+    margin: 20px 0px 15px 0px;
+}
+
+.item_stuff tr td .l .price {
+    margin: 0px 30px 0px 0px;
+    text-align: right;
+    font: normal normal 30px/30px tahoma;
+    color: #ffffff;
+}
+
+.item_stuff tr td .l .call strong {
+    margin: 0px 0px 0px 0px;
+    font: normal strong 18px/30px tahoma;
+    color: #ffffff;
+}
+
+.item_stuff tr td .r {
+    margin: 20px 0px 0px 10px;
+    padding: 0px 20px 20px 20px;
+    min-height: 262px;
+    //background: #5ed363; /* Изменения №3 (закоментировал, цвет определяется jpg) */
+    font: normal normal 18px/24px tahoma;
+    color: #ffffff;
+}
+
+.item_stuff tr td .r ul {
+    margin: 5px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    list-style: disc inside;
+    font: normal normal 18px/24px tahoma;
+    color: #ffffff;
+	
+	list-style-image: url('images/arrow_right.png'); /* Изменения №3 (добавил, стрелки для блока "Похожие аттракционы") */	
+}
+
+.item_stuff tr td .r ul.services {
+    margin: 5px 0px 30px 0px;
+}
+
+.item_stuff tr td .r ul li, .item_stuff tr td .r ul li a {
+    font: normal normal 18px/24px tahoma;
+    color: #ffffff;
+}
+
+.viewed {
+    margin: 10px 10px -20px 10px;
+    padding: 10px 0px 0px 0px;
+    border-top: solid 1px #8d8989;
+    position: relative;
+}
+
+.viewed .cpt {
+    margin: 0px 0px 15px 0px;
+    font: normal bold 15px/24px tahoma;
+    color: #eeeeee;
+    text-align: center;
+}
+
+.viewed .viewport {
+    /*width: 730px;*/
+    margin: 0px auto 0px auto;
+    /*height: 166px;*/
+    overflow: hidden;
+}
+
+.viewed .viewport .container {
+    width: 9999px;
+    height: 166px;
+}
+
+.viewed .viewport .container .item {
+    float: left;
+    width: 126px;
+    margin: 0px 25px 25px 0px;
+    text-align: center;
+}
+
+.viewed .viewport .container .item a.pic {
+    display: block;
+    padding: 0px;
+    width: 120px;
+    height: 120px;
+    margin: 0px 0px 5px 0px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+    border: solid 3px #989797;
+    overflow: hidden;
+}
+
+.viewed .viewport .container .item a.pic:hover {
+    border: solid 3px #fff;
+}
+
+.viewed .viewport .container .item .pic img {
+    width: 120px;
+    height: 120px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.viewed .viewport .container .item a.title {
+    font: normal normal 14px/25px tahoma;
+    color: #eeeeee;
+    text-align: center;
+    text-decoration: none;
+}
+
+.viewed .viewport .container .item a.title:hover {
+    text-decoration: underline;
+}
+
+.viewed .prev {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    margin-left: -391px;
+    top: 100px;
+    width: 16px;
+    height: 25px;
+    background: url('images/prev.png') left top no-repeat;
+}
+
+.viewed .prev:hover {
+    background: url('images/prev.png') left bottom no-repeat;
+}
+
+.viewed .next {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    margin-left: 375px;
+    top: 100px;
+    width: 16px;
+    height: 25px;
+    background: url('images/next.png') left top no-repeat;
+}
+
+.viewed .next:hover {
+    background: url('images/next.png') left bottom no-repeat;
+}
+
+/* Изменения №1 (добавил .go_back_category, на "старый стиль" -.go_back, предыдущий веб-мастер оставил где-то обработчик события, поэтому я его не использую */
+.go_back, .go_back_category {  
+    margin: 10px 0px 15px 0px;
+    position: relative;
+    width: 145px;
+    height: 25px;
+    cursor: pointer;
+	display: inline-block; /* Изменения №1 (добавил) */
+}
+
+/* Изменения №1 (добавил) */
+.go_description {
+    margin: 10px 0px 15px 20px;
+    position: relative;
+    width: 145px;
+    height: 25px;
+    cursor: pointer;
+    display: inline-block;
+}
+/* конец изменения №1 (добавил) */
+
+.go_description a { /* Изменения №1 (добавил ".go_description a" и "go_back_category a") и убрал .go_back a и .go_back_category a  */
+    display: block;
+    position: absolute;
+    z-index: 10;
+    left: 0px;
+    top: 0px;
+    width: 145px;
+    height: 25px;
+//    background: url('images/go_back.png') left top no-repeat;
+		background: url('images/bottom_arrow.png') left top no-repeat;
+		padding-left: 20px;
+    font: normal bold 13px/25px tahoma;
+//    color: #fff;
+		color: rgb(45, 126, 58);
+    text-align: center;
+    text-decoration: underline;
+}
+
+.go_back_category a { /* Изменения №1 (добавил ".go_description a") */
+    display: block;
+    position: absolute;
+    z-index: 10;
+    left: 0px;
+    top: 0px;
+    width: 145px;
+    height: 30px; /* Изменения №3 (было 25px, стало 30px, причина - урезанная стрелка) */
+//    background: url('images/go_back.png') left top no-repeat;
+		background: url('images/left_arrow.png') left top no-repeat;
+		padding-left: 10px;
+    font: normal bold 13px/25px tahoma;
+//    color: #fff;
+		color: rgb(45, 126, 58);
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* изменения №1 (добавил) */
+.go_back a {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    left: 0px;
+    top: 0px;
+    width: 145px;
+    height: 25px;
+//    background: url('images/go_back.png') left top no-repeat;
+    font: normal bold 12px/25px tahoma;
+    color: rgb(163, 133, 133);
+    text-align: center;
+    text-decoration: underline;
+}
+.go_back {
+    margin: 10px 0px 15px 133px;
+    position: relative;
+    width: 145px;
+    height: 25px;
+    cursor: pointer;
+    display: inline-block;
+}
+/* конец изменения №1 (добавил) */
+
+.c_ {
+    position: absolute;
+    z-index: 3;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+}
+
+.banner_block {
+    height: 175px;
+}
+
+.banner_block p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner_block p img {
+    width: 100%;
+}
+
+.articles_list {
+    margin: 0px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+}
+
+.articles_list .item {
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.articles_list .item .cpt {
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.articles_list .item .cpt a {
+    font: normal bold 14px/14px tahoma;
+    color: #676767;
+}
+
+a.fancybox {
+    position: absolute;
+    z-index: 99999;
+    top: 7px;
+    left: -24px;
+    opacity: .9;
+}
+
+a.fancybox:hover {
+    opacity: 1;
+}
+
+.fancybox-skin {
+    padding: 0 !important;
+}
+
+.fancybox-close {
+    right: -30px !important;
+    top: -30px !important;
+}
+
+.fancybox-inner iframe {
+    width: 600px;
+    height: 400px;
+}
+
+.descr-data .l p,
+.descr-data .r p {
+    color: black;
+    font-size: 16px;
+}
+
+.descr-data p.head {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.descr-data .l p.head,
+.descr-data .r p.head {
+    font-size: 1em;
+}
+
+.descr-data .time {
+    font-size: 1em;
+    padding-left: 30px;
+    font-family: tahoma;
+}
+
+.descr-data .time > * {
+}
+
+.descr-data .price {
+    padding-left: 30px;
+    margin: 10px 0;
+    font-family: tahoma;
+}
+
+.descr-data .price > * {
+    margin: 5px 0;
+    display: inline-block;
+}
+
+.descr-data ul {
+    padding-left: 20px;
+}
+
+.descr-data ul li {
+//    list-style: none; /* Изменения №3 (закоментировал, для стрелок для блока "Похожие аттракционы") */
+}
+
+.descr-data .services ul li,
+.descr-data .services ul li a {
+    color: white;
+    font-size: 16px;
+}
+
+.descr-data .services ul li {
+    list-style: disc;
+}
+
+.descr-data td {
+    min-height: 300px;
+}
+
+.descr-data .specifications {
+    min-height: 180px;
+    font-family: tahoma;
+}
+
+.descr-data .specifications ul li {
+    color: black;
+    list-style: none; /* Изменения №3 (закоментировал, для стрелок для блока "Похожие аттракционы") */	
+}
+
+.descr-data .nothing {
+    display: block;
+    text-align: center;
+}
+
+.descr-data tr:first-child td:first-child {
+    border-right: 1px solid gray;
+}
+
+.descr-data .number,
+.descr-data .call {
+    text-align: center;
+}
+
+.content_table {
+    width: 100%;
+}
+
+#filter-search .categories,
+#filter-search .categories-group {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#filter-search .categories {
+    width: 67%;
+}
+
+#filter-search .categories > div {
+    display: inline-block;
+    width: 49%;
+}
+
+#filter-search .categories-group {
+    width: 30%;
+}
+
+#filter-search div.filter-checkbox {
+    color: #676767;
+    margin: 5px 0px;
+}
+
+#filter-search > div > p {
+    padding-left: 30px;
+    font-size: 97%;
+}
+
+#filter-search div.submit {
+    text-align: center;
+    margin: 15px 0;
+
+}
+
+#filter-search div.submit input {
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 0 10px;
+	box-shadow: 2px -1px 3px rgba(0,0,0,0.5);		
+}
+
+.content_table .found span::after {
+    content: ', ';
+}
+
+.content_table .not-found {
+    margin: 50px;
+    text-align: center;
+    opacity: .5;
+}
+
+.stuff .search {
+    width: 300px; /* Изменения №3 (изменил с 300 на 241 - шапка по умолчанию должна быть свернута) */
+				  /* Изменения №4 (изменил с 241 на 300 - шапка по умолчанию должна быть развернута) */	
+    position: absolute;
+    bottom: 7px;
+    left: 66px; /* Изменения №3 (изменил с 66 на 618 - шапка по умолчанию должна быть свернута) */
+				/* Изменения №4 (изменил с 618 на 66 - шапка по умолчанию должна быть развернута) */	
+}
+
+.stuff .search span {
+	margin:0px 0px 0px 10px;
+}
+
+/* Изменения №3 (развернутая шапка для главной) */
+.stuff_main .search {
+   width: 300px;
+   position: absolute;
+   bottom: 7px;
+   left: 66px;
+}
+/* Конец Изменения №3 (развернутая шапка для главной) */
+.search > a {
+    display: block;
+    margin: 5px 0;
+    font-size: .8em;
+    color: #878686;
+}
+
+.search form {
+    margin-bottom: 2px;
+}
+
+.search form .input {
+    border: 1px solid rgba(160, 160, 160, .3);
+    position: relative;
+    background-color: #ffffff;
+}
+
+.search form .input.focus {
+    border-color: rgb(66, 209, 226);
+}
+
+.search input[type=text] {
+    padding: 5px 8px;
+    font-size: .8em;
+    border: 0;
+    width: 90%;
+    display: block;
+    background-color: transparent;
+    position: relative;
+    z-index: 99;
+}
+
+.search input[type=text]:focus {
+    outline: none;
+}
+
+.search input[type=text]:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.search input[type=text]:focus:-moz-placeholder {
+    color: transparent;
+}
+
+.search input[type=text]:focus::-moz-placeholder {
+    color: transparent;
+}
+
+.search input[type=text]:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+.search input[type=submit] {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    color: transparent;
+    background: rgba(195, 195, 181, 0.75) url("images/search_icon.png") center no-repeat;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.search input[type=submit]:hover,
+.search input[type=submit]:focus {
+    background-color: rgba(195, 195, 181, 1);
+    outline: none;
+}
+
+.body-inside #header {
+    position: fixed;
+    top: 0;
+	display: none; /* Изменения №4 (добавил, шапка по умолчанию не видна) */	
+}
+
+.body-inside #content {
+	margin-top: 130px; /* Изменения №3 (изменил с 130 на 63 - шапка по умолчанию должна быть поднята) */
+					   /* Изменения №4 (изменил с 63 на 130 - шапка по умолчанию должна быть развернута) */	
+}
+
+/*Всплывающий скриншот*/
+.thumbnail{  
+display: inline;
+text-decoration: underline;
+position: relative;  
+z-index: 0;  
+}  
+.thumbnail:hover{  
+text-decoration: none;
+background-color: transparent;  
+z-index: 50;  
+}  
+.thumbnail span{ /*CSS for enlarged image*/  
+position: absolute;  
+background-color: #f0f8ff;  
+padding: 5px;  
+left: -1000px;  
+border: 1px solid white;  
+visibility: hidden;  
+color: black;  
+text-decoration: none;  
+border-radius: 4px 4px 4px 4px;
+-moz-border-radius: 4px 4px 4px 4px;
+-webkit-border-radius: 4px 4px 4px 4px;
+}    
+.thumbnail:hover span{ /*CSS for enlarged image on hover*/  
+visibility: visible;  
+top: 20px;  
+left: -20px; /*position where enlarged image should offset horizontally */  
+}  
+/*---------------------*/
+a.buy {
+    background: url(http://arenda-attrakcionov.ru/wp-content/uploads/2015/04/prodazha_attrakcionov.jpg); /* Путь к файлу с исходным  рисунком */
+   display: inline-block; /*  Рисунок как блочный элемент */
+   width: 80px; /* Ширина рисунка в пикселах */
+    height: 20px; /* Высота рисунка */
+	
+   }
+   a.buy:hover {
+    background: url(http://arenda-attrakcionov.ru/wp-content/uploads/2015/04/prodazha_attrakcionov2.jpg);
+   }
+   
+/* Изменения №1 (стилизация чекбоксов) */
+        .filter-checkbox span#checkbox_span input[type="checkbox"]{
+            display: none;
+        }
+        .filter-checkbox{
+            clear: both;
+            height: 21px;
+            margin-bottom: 5px;
+        }
+        .filter-checkbox span#checkbox_span {
+            display: block;
+            float:left;
+            cursor: pointer;
+            width: 12px;
+            height: 15px;
+            background: url("http://arenda-attrakcionov.ru/wp-content/themes/my_theme/images/checkbox.png") no-repeat 0 0;
+            margin-right:10px;
+        }
+		.check_active span#checkbox_span {
+		  background-position: 0 -14.5px;
+		}
+/* Конец изменения №1 (стилизация чекбоксов) */   
+
+/* Изменения №1 (кнопка Найти)*/
+#search_button {
+	position: absolute;
+	top: 25px;
+	left: 700px;
+}
+
+/* Изменения №1 (строчку описания пользования расширенным поиском) */
+#description_search {
+	color: #676767;
+	font-weight:bold;
+	font-size: 20px;
+}
+/* Конец изменения №1 */
+
+/* Изменения №2 (подвижная шапка)*/
+#header_button_down {
+    position: absolute;
+	bottom: -18px;
+	right: -35px;
+	height: 37px;
+	width: 37px;
+	background: url(images/header_arrow_down.png);
+	cursor: pointer;
+}
+#header_button_up {
+    position: absolute;
+	bottom: -18px;
+	right: -35px;
+	height: 37px;
+	width: 37px;
+	background: url(images/header_arrow_up.png);
+	cursor: pointer;
+}
+/* Конец изменения №2 (подвижная шапка) */
+
+/* Изменения №3 (добавил, одинаковая высота блоков) */
+#left_box {
+    background: url('images/line_left_box.png') left repeat-y;
+	height:100%	
+}
+
+#right_box {
+    background: url('images/line_right_box.png') right repeat-y;
+	height:100%
+}
+/* Конец Изменения №3 (добавил, одинаковая высота блоков) */

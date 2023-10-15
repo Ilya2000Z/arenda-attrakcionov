@@ -1,0 +1,39 @@
+/**
+Theme Name: Мобильная тема Аренда-Аттракционов
+Author: Антон Каледин
+Author URI: https://effectik.com
+Version: 1.0.1
+*/
+.dezinfaction {display: flex;justify-content: center;margin: 0.5rem 0;}
+.dezinfaction a {background: url('images/product/desinfection-v4.svg');width: 317px;height: 54px;display: block;margin-bottom: 3px;}
+.dezinfaction a:hover {background: url('images/product/desinfection-hover-v4.svg');}
+.holidays li a {padding-left:47px; }
+.item.happy-ny-2021 img {height: 20vh !important;}
+.socmedia-items a:first-child{margin-right:-6px;}
+.socmedia-items a:nth-child(2){margin-right:-5px;}
+.socmedia-items {display: flex;align-items: center;justify-content: center;}
+.emm-paginate {padding:10px 0; overflow:hidden; margin-top: 1rem; margin-bottom: 1rem; text-align: center; }
+.emm-paginate a { padding:.4rem .7rem; color:#333;-webkit-border-radius: 2px;  font-size: 18px; font-weight: bold;
+-moz-border-radius: 2px;
+border-radius: 2px; text-align:center; text-decoration:none;margin-right:5px;}
+.emm-paginate .emm-title {color:#555; margin-right:4px;}
+.emm-paginate .emm-gap {color:#999; margin-right:4px;}
+.emm-paginate a:hover, .emm-paginate a:active, .emm-page.emm-current,  #more {background:#FD9F4B !important;border:1px solid  #FD9F4B !important; margin-right:5px; padding:.4rem .7rem;color:#fff !important;-webkit-border-radius: 5px;
+-moz-border-radius: 5px; font-size: 150%;font-weight: bold;border-radius: 5px;}
+.emm-paginate .emm-page, .emm-paginate .emm-prev, .emm-paginate .emm-next {background:#FFFFFF; border:1px solid  #CCCCCC; margin-right:5px; padding:.4rem .7rem;color:#000;-webkit-border-radius: 5px;-moz-border-radius: 5px; font-size: 150%; font-weight: bold;border-radius: 5px;}
+input[type="checkbox"],input[type="radio"]{width: 13px;display: inline-block;}
+.gray_block{background:#676767;}
+.gray_block .stuff{padding: 1.5rem;color:#eee;}
+.gray_block .stuff .caption{color:#eee;font-size:20px;}
+/*
+#menu ul li::after {
+    display: block;
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid #D7D7D7;
+}
+#menu ul li {
+    position: relative;
+    border-bottom: 1px solid #ffffff !important;
+}
+*/

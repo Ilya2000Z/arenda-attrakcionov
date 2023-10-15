@@ -1,0 +1,746 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+@media screen and (max-width: 1400px)
+	.main-page
+		.first-screen
+
+			.columns-wrapper
+				.left-col
+					width: calc(100% - 350px - 80px - 40px)
+				.right-col
+					width: calc(350px + 80px)
+
+	.event-steps-section
+		.event-steps-wrapper
+			.event-step
+				margin-right: 110px
+				&:after
+					width: 110px
+					right: -121px
+				&:nth-child(4)
+					&:after
+						width: 170px
+						right: 45px
+				&:nth-child(6)
+					margin-left: 360px
+
+	.three-items-slider,
+	.four-items-slider,
+	.any-items-slider
+		.swiper
+			width: calc(100% - 100px)
+			margin-left: 50px
+
+		.swiper-button-prev
+			left: 0
+		.swiper-button-next
+			right: 0
+
+// ≥1200px
++media-breakpoint-down(xl)
+	.container
+		max-width: 1140px
+	.main-page
+		.first-screen
+			.bg-image
+				left: 0
+				&:after
+					border-radius: 0
+				img
+					border-radius: 0
+			.columns-wrapper
+				width: 100%
+				max-width: 800px
+				margin-left: auto
+				margin-right: auto
+				.left-col
+					width: 100%
+					margin-right: 0
+				.right-col
+					display: none
+
+	.event-steps-section
+		margin-bottom: 40px
+		.event-steps-wrapper
+			width: 100%
+			max-width: 500px
+			margin-left: auto
+			margin-right: auto
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			padding-left: 40px
+			padding-right: 40px
+			padding-top: 20px
+			padding-bottom: 20px
+			position: relative
+			&:after
+				position: absolute
+				height: calc(100% - 40px)
+				width: 10px
+				background-color: #edebeb
+				left: calc(50% - 5px)
+				top: 0
+				content: ""
+			&:before
+				position: absolute
+				width: 30px
+				height: 30px
+				background-color: #edebeb
+				border-radius: 50%
+				left: calc(50% - 15px)
+				top: -10px
+				content: ""
+
+			.event-step
+				margin-left: 0
+				margin-right: 0
+				margin-bottom: -40px
+				&:nth-child(1)
+					&:before
+						display: none
+
+				&:nth-child(1),
+				&:nth-child(6)
+					margin-left: 0
+				&:nth-child(5)
+					order: 0
+				&:nth-child(4)
+					margin-top: 0
+					&:after
+						width: 60px
+						background-color: #edebeb
+						left: -60px - 11px
+						height: 10px
+						border-radius: 0
+						border: none
+						top: calc(50% - 5px)
+				&:nth-child(2n+1)
+					margin-right: auto
+					&:after
+						width: 60px
+						background-color: #edebeb
+						right: -60px - 11px
+
+				&:nth-child(2n)
+					margin-left: auto
+					&:after
+						width: 60px
+						background-color: #edebeb
+						left: -60px - 11px
+
+				&:last-child
+					margin-left: auto
+					margin-right: auto
+					margin-top: 100px
+					margin-bottom: 0
+					&:after
+						content: none
+
+@media screen and (max-width: 1100px)
+	.main-page
+		.first-screen
+			.bg-image
+				img
+					border-radius: 0
+			.columns-wrapper
+				width: 100%
+				max-width: 800px
+				margin-left: auto
+				margin-right: auto
+				.left-col
+					width: 100%
+
+				.right-col
+					display: none
+
+// ≥992px
++media-breakpoint-down(lg)
+
+	.master-classes-catalogue
+		.master-class-catalogue-wrapper
+			.master-class-catalogue-card
+				width: calc(33.333333% - 14px)
+				margin-right: 20px
+				margin-bottom: 20px
+				&:nth-child(4n)
+					margin-right: 20px
+				&:nth-child(3n)
+					margin-right: 0
+
+	.master-class-cards-wrapper
+		.master-class-card
+			width: calc(33.333333% - 12px)
+			&:nth-child(4n)
+				margin-right: 18px
+			&:nth-child(3n)
+				margin-right: 0
+
+	.about-team-section
+		.about-team-wrapper
+			flex-direction: column
+			width: 100%
+			max-width: 600px
+			margin-left: auto
+			margin-right: auto
+			align-items: center
+			.text
+				width: 100%
+				order: 2
+				margin-top: 20px
+				margin-bottom: 30px
+			.pictures
+				margin-left: 0
+				margin-top: 20px
+
+	.mc-page
+		.first-screen
+			.columns-wrapper
+				padding-top: 30px
+				margin-right: auto
+				.wrapper
+					.bottom
+						max-width: 100%
+						border-radius: 20px
+						.left
+							width: calc(100% - 240px)
+							margin-right: 30px
+						.right
+							width: 240px
+							margin-left: 0
+
+			.container
+				.bg-image
+					right: -40px
+					height: 100%
+
+					&:after
+						border-radius: 0
+					img
+						border-radius: 0
+						object-fit: cover
+						height: 100%
+
+
+
+
+// ≥768px
++media-breakpoint-down(md)
+
+	.master-classes-categories
+		margin-bottom: 30px
+
+	.event-steps-section
+		margin-bottom: 30px
+
+	.mc-page
+		.first-screen
+			margin-bottom: 30px
+
+	.master-classes-catalogue
+		margin-bottom: 30px
+
+	.profitable-offers-section
+		padding-top: 30px
+		padding-bottom: 30px
+
+	.about-team-section
+		margin-top: 30px
+
+	.held-masterclasses-section
+		padding-top: 30px
+		margin-bottom: 30px
+
+	.reviews-section
+		padding-top: 30px
+		margin-bottom: 30px
+
+	.faq-section
+		margin-bottom: 30px
+
+	.seo-section
+		padding-top: 30px
+		padding-bottom: 30px
+
+
+	.subcategories-wrapper
+		display: flex
+		flex-direction: column
+		width: 100%
+		max-width: 200px
+		position: relative
+		.mobile-title
+			width: 100%
+			display: inline-block
+			font-size: .88em
+			padding: 10px 28px
+			border-radius: 10px
+			background: #EFEFEF
+			line-height: 1
+			margin-bottom: 1px
+			position: relative
+			z-index: 10
+			transition: all .3s
+			&:after
+				content: ">"
+				display: inline-block
+				position: absolute
+				right: 20px
+				transform: rotate(90deg)
+				color: rgba(82, 81, 81, 0.20)
+				font-size: 20px
+				top: 9px
+				transition: transform .3s
+			&.on
+				border-radius: 10px 10px 0 0
+				&:after
+					transform: rotate(270deg)
+
+
+
+		.subcategory-link
+			font-size: .77em
+			border-radius: 0
+			margin-right: 0
+			margin-bottom: 0
+			background-color: #EFEFEF
+			border-bottom: 1px solid #fff
+			color: rgba(56, 56, 56, 0.70)
+			&:last-child
+				border-radius: 0 0 10px 10px
+				border: none
+		.wrapper
+
+			display: none
+			width: 100%
+			max-width: 200px
+			position: absolute
+			z-index: 2
+			top: 36px
+
+	.master-classes-catalogue
+		.content-wrapper
+			border-radius: 20px
+			padding: 20px
+			padding-bottom: 30px
+		.master-class-catalogue-wrapper
+			.master-class-catalogue-card
+				border-radius: 10px
+				img
+					border-radius: 10px 10px 0 0
+				.text-wrapper
+					padding: 10px
+					padding-bottom: 0
+					.text
+						font-size: .77em
+					.price
+						font-size: 0.65em
+
+	.main-page
+		.first-screen
+			.columns-wrapper
+				.left-col
+					.bottom
+						form
+							.left
+								width: calc(100% - 160px)
+								.agreement-checkbox
+									white-space: nowrap
+							.right
+								width: 180px
+								margin-left: 20px
+								button
+									width: 160px
+									font-size: .9em
+									padding-left: 10px
+									padding-right: 10px
+									border-radius: 10px
+
+	.mc-page
+		.first-screen
+			.columns-wrapper
+				.wrapper
+					.bottom
+						form
+							.left
+								width: calc(100% - 160px)
+								margin-right: 0
+								.agreement-checkbox
+									white-space: nowrap
+							.right
+								width: 180px
+								margin-left: 20px
+								button
+									width: 160px
+									font-size: .9em
+									padding-left: 10px
+									padding-right: 10px
+									border-radius: 10px
+
+	.feedback-global-form
+		.left
+			width: calc(100% - 160px)
+			.agreement-checkbox
+				white-space: nowrap
+		.right
+			width: 180px
+			margin-left: 20px
+			button
+				min-width: auto
+				width: 160px
+				font-size: .9em
+				padding-left: 10px
+				padding-right: 10px
+				border-radius: 10px
+
+	.three-items-slider,
+	.four-items-slider,
+	.any-items-slider
+		.swiper-button-prev,
+		.swiper-button-next
+			width: 60px
+			height: 60px
+			span
+				font-size: 44px
+				top: 8px
+		.swiper
+			width: calc(100% - 60px)
+			margin-left: 30px
+
+	.about-team-section
+		.about-team-wrapper
+			.text
+				display: -webkit-box
+				-webkit-line-clamp: 3
+				-webkit-box-orient: vertical
+				overflow: hidden
+				text-overflow: ellipsis
+				line-height: 1.5
+				cursor: pointer
+				// transition: all .4s
+				// max-height: 70px
+				&>*:last-child
+					margin-bottom: 0
+					padding-bottom: 0
+				&>p
+					display: inline
+					&:after
+						content: "\A\A"
+						white-space: pre
+				&.show
+					-webkit-line-clamp: initial
+
+	h1,
+	.h1
+		font-size: 1.8em
+
+	.main-page .first-screen .columns-wrapper .left-col .top .title
+		font-size: 2em
+
+	.mc-page .first-screen .columns-wrapper .wrapper .top .title
+		font-size: 2em
+
+	.orange-advantage-block .main-text
+		font-size: 2em
+		&.infinity-symbol-wrapper
+			height: 36px
+			.infinity-symbol
+				font-size: 80px
+
+
+	.master-class-cards-wrapper
+		.master-class-card
+			width: calc(50% - 9px)
+			&:nth-child(4n)
+				margin-right: 0
+			&:nth-child(3n)
+				margin-right: 18px
+			&:nth-child(2n)
+				margin-right: 0
+
+	.faq-section
+		.faq-wrapper
+			padding: 25px 20px
+
+
+// 576px
++media-breakpoint-down(sm)
+
+	.add-padding-border
+		padding: 10px
+
+	.title-with-margin
+		margin-left: 10px
+
+	.seo-section
+		.text
+			height: 87px
+
+	.master-classes-catalogue
+		.content-wrapper
+			padding: 10px
+		.master-class-catalogue-wrapper
+			.master-class-catalogue-card
+				width: calc(50% - 5px)
+				margin-right: 10px
+				margin-bottom: 10px
+				&:nth-child(3n)
+					margin-right: 10px
+				&:nth-child(2n)
+					margin-right: 0
+				&:nth-child(4n)
+					margin-right: 0
+
+
+	.container
+		padding-left: 10px
+		padding-right: 10px
+	body
+		font-size: 16px
+
+	.main-page,
+	.mc-page
+		.first-screen
+			overflow: hidden
+			.columns-wrapper
+				padding-top: 20px
+				padding-bottom: 20px
+
+	.mc-page
+		.first-screen
+			.columns-wrapper
+				.breadcrumbs
+					ul
+						li
+							margin-right: 4px
+							&:after
+								content: none
+							&.home-link
+								top: 0
+								svg
+									fill: $pale-orange
+							a
+								color: $pale-orange
+								background: rgba(255, 255, 255, 0.80)
+								display: inline-block
+								text-decoration: none
+								padding: 4px 12px
+								border-radius: 20px
+
+
+
+
+
+
+	.master-class-cards-wrapper
+		border-radius: 20px
+		padding: 10px
+		.master-class-card
+			margin-right: 10px
+			width: calc(50% - 5px)
+			margin-bottom: 10px
+			// padding: 25px 30px
+			&:nth-child(4n)
+				margin-right: 0
+			&:nth-child(3n)
+				margin-right: 10px
+			&:nth-child(2n+1)
+				margin-right: 10px
+			&:nth-child(2n)
+				margin-right: 0
+
+	.event-steps-section
+		.event-steps-wrapper
+			padding-left: 0
+			padding-right: 0
+			width: 400px
+			.event-step
+				margin-bottom: -50px
+				height: 140px
+				width: 140px
+				&:last-child
+					margin-top: 70px
+				.text
+					margin-top: 0
+				&:nth-child(4)
+					margin-top: 0
+					&:after
+						width: 60px
+						background-color: #edebeb
+						left: -60px - 11px
+						height: 10px
+						border-radius: 0
+						border: none
+						top: calc(50% - 5px)
+				&:nth-child(2n+1)
+					margin-right: auto
+					&:after
+						width: 60px
+						background-color: #edebeb
+						right: -60px - 11px
+
+				&:nth-child(2n)
+					margin-left: auto
+					&:after
+						width: 60px
+						background-color: #edebeb
+						left: -60px - 11px
+
+
+
+
+	.three-items-slider,
+	.four-items-slider,
+	.any-items-slider
+		.swiper
+			width: calc(100% + 100px)
+			margin-left: -50px
+			padding-left: 0px
+			padding-right: 0px
+			.swiper-slide
+				width: 70%
+				&.review-slide
+					width: 230px
+
+		.swiper-button-prev,
+		.swiper-button-next
+			display: none
+
+	.spoiler-block
+		margin-bottom: 10px
+		.spoiler-title
+			font-size: 1em
+		.spoiler-content
+			font-size: 1em
+			margin-left: 20px
+			padding: 20px
+			padding-top: 30px
+
+	.about-team-section
+		.about-team-wrapper
+			.pictures
+				width: 100%
+				.team-person-card
+					margin-right: 20px
+					margin-bottom: 20px
+					width: calc(33.33333333% - 14px)
+					.name
+						font-size: 1em
+
+	.any-items-slider.reviews-slider
+		.swiper
+			padding-left: 50px
+			padding-right: 50px
+
+	.main-page .first-screen .columns-wrapper .left-col .top .advantages-wrapper
+		margin-bottom: 20px
+		.orange-advantage-block
+			margin-right: 40px
+
+	.orange-advantage-block
+		margin-right: 40px
+		.main-text
+			font-size: 1.5em
+			&.infinity-symbol-wrapper
+				height: 24px
+				.infinity-symbol
+					font-size: 52px
+
+	.main-page
+		.first-screen
+			.columns-wrapper
+				.left-col
+					.top
+						padding: 20px
+					&>.bottom
+						padding: 20px
+						form
+							.right
+								button
+									width: 130px
+
+	.mc-page
+		.first-screen
+			.columns-wrapper
+				.wrapper
+					.top
+						padding: 20px
+					.bottom
+						padding: 20px
+						form
+							.left
+								.agreement-checkbox
+									width: 0
+
+
+	.feedback-global-form
+		padding: 20px
+		.right
+			button
+				width: 130px
+
+
+@media screen and (max-width: 420px)
+
+	.event-steps-section
+		.event-steps-wrapper
+			padding-left: 0
+			padding-right: 0
+			width: 300px
+			&:after
+				width: 8px
+				left: calc(50% - 4px)
+			.event-step
+				width: 120px
+				height: 120px
+				border-width: 4px
+				padding: 8px 6px
+				&:after
+					height: 8px
+					top: calc(50% - 4px)
+				&:nth-child(4)
+					margin-top: 0
+					&:after
+						width: 30px
+						background-color: #edebeb
+						left: -33px
+						height: 8px
+						border-radius: 0
+						border: none
+						top: calc(50% - 4px)
+				&:nth-child(2n+1)
+					margin-right: auto
+					&:after
+						width: 30px
+						background-color: #edebeb
+						right: -33px
+
+				&:nth-child(2n)
+					margin-left: auto
+					&:after
+						width: 30px
+						background-color: #edebeb
+						left: -33px
+
+
+
+// ≥0px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

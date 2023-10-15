@@ -1,0 +1,126 @@
+# Translation of Plugins - Page Links To - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Page Links To - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-08-29 12:54:08+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Page Links To - Stable (latest release)\n"
+
+#: templates/quick-add.php:26
+msgid "You should customize this short URL to make it shorter and more memorable!"
+msgstr "Вам необходимо изменить короткую ссылку для того, чтобы она была более запоминающейся!"
+
+#: templates/quick-add.php:25
+msgid "page-title"
+msgstr "Заголовок страницы"
+
+#: templates/quick-add.php:25
+msgid "Short URL"
+msgstr "Короткая ссылка"
+
+#: templates/quick-add.php:21
+msgid "URL"
+msgstr "Ссылка"
+
+#: templates/quick-add.php:17
+msgid "Page Title"
+msgstr "Заголовок страницы"
+
+#: templates/quick-add.php:17
+msgid "Title"
+msgstr "Заголовок"
+
+#: templates/quick-add.php:9
+msgid "Sorry, your browser does not support copying."
+msgstr "Извините, Ваш браузер не поддерживает копирование."
+
+#: templates/quick-add.php:8
+msgid "Copied to Clipboard!"
+msgstr "Скопировано в буфер обмена!"
+
+#: classes/plugin.php:1122
+msgid "Linked URL"
+msgstr "Прикрепленная ссылка"
+
+#: classes/plugin.php:1087
+msgid "Links to:"
+msgstr "Ссылки на:"
+
+#: classes/plugin.php:919
+msgid "Page link draft saved!"
+msgstr "Черновик ссылки сохранен!"
+
+#: classes/plugin.php:919
+msgid "New page link published!"
+msgstr "Новая ссылка опубликована!"
+
+#: classes/plugin.php:424
+msgid "Add Page Link"
+msgstr "Добавить ссылку на страницу"
+
+#: classes/plugin.php:396
+msgid "Copy Short URL"
+msgstr "Скопировать короткую ссылку"
+
+#: classes/plugin.php:378
+msgid "Page Link"
+msgstr "Ссылка на страницу"
+
+#: classes/plugin.php:988
+msgid "No thanks"
+msgstr "Нет, спасибо"
+
+#: classes/plugin.php:988
+msgid "Give Me Updates"
+msgstr "Дайте мне обновления"
+
+#. Author URI of the plugin
+msgid "https://coveredweb.com/"
+msgstr "https://coveredweb.com/"
+
+#. Author of the plugin
+msgid "Mark Jaquith"
+msgstr "Mark Jaquith"
+
+#. Description of the plugin
+msgid "Allows you to point WordPress pages or posts to a URL of your choosing.  Good for setting up navigational links to non-WP sections of your site or to off-site resources."
+msgstr "Даёт возможность перенаправить страницу или запись WordPress на указанный URL. Подходит для создания навигационных ссылок на разделы сайта не под управлением WordPress или на внешние ресурсы."
+
+#. Plugin URI of the plugin
+msgid "http://txfx.net/wordpress-plugins/page-links-to/"
+msgstr "http://txfx.net/wordpress-plugins/page-links-to/"
+
+#. Plugin Name of the plugin
+#: classes/plugin.php:987
+msgid "Page Links To"
+msgstr "Page Links To"
+
+#: classes/plugin.php:1068
+msgid "<strong>Note</strong>: This content is pointing to a custom URL. Use the &#8220;%s&#8221; box to change this behavior."
+msgstr "<strong>Заметка</strong>: Это содержимое указывает на пользовательский адрес. Используйте &#8220;%s&#8221;, чтобы изменить это поведение."
+
+#: classes/plugin.php:549
+msgid "Open this link in a new tab"
+msgstr "Открывать ссылку в новой вкладке"
+
+#: classes/plugin.php:545
+msgid "A custom URL"
+msgstr "Пользовательская ссылка"
+
+#: classes/plugin.php:544
+msgid "Its normal WordPress URL"
+msgstr "Это нормальный URL WordPress"
+
+#: classes/plugin.php:543
+msgid "Point this content to:"
+msgstr "Перенаправить это содержимое на:"
+
+#: classes/plugin.php:1054
+msgctxt "Meta box title"
+msgid "Page Links To"
+msgstr "Page Links To"
