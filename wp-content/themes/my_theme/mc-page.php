@@ -1,13 +1,15 @@
 <?php
 /*
-Template Name: страница мастер-классов
+Template Name: страница мастер-классов mc-page
 Template Post Type: post, page, product
 */
+
+get_header('new')
+
 ?>
 
 
-
-
+<html lang="ru">
 <head>
 
     <meta charset="utf-8">
@@ -20,8 +22,8 @@ Template Post Type: post, page, product
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Template Basic Images Start -->
-    <meta property="og:image" content="path/to/image.jpg">
-    <link rel="icon" href="img/favicon/favicon.ico">
+    <!--<meta property="og:image" content="path/to/image.jpg"> -->
+    <link rel="icon" href="../wp-content/themes/my-theme/images/favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
     <!-- Template Basic Images End -->
 
@@ -29,7 +31,7 @@ Template Post Type: post, page, product
     <meta name="theme-color" content="#000">
     <!-- Custom Browsers Color End -->
 
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="../wp-content/themes/my-theme/css/main.min.css">
 
 </head>
 
@@ -38,17 +40,12 @@ Template Post Type: post, page, product
 <!-- Custom HTML -->
 
 <div class="main-content">
-    <header>
-        <!-- в контейнер я ее поместил для красоты -->
-        <div class="container">
-            шапку забираем отсюда <a href="https://arenda-attrakcionov.ru/">https://arenda-attrakcionov.ru/</a>
-        </div>
-    </header>
+
     <div class="first-screen">
 
         <div class="container">
             <div class="bg-image">
-                <img src="img/first-screen-bg2.jpg" alt="">
+                <img src="../wp-content/themes/my_theme/images/first-screen-bg2.jpg" alt="">
             </div>
             <div class="columns-wrapper">
                 <nav class="breadcrumbs">
@@ -122,7 +119,7 @@ Template Post Type: post, page, product
                 <div class="master-class-catalogue-wrapper">
                     <div class="master-class-catalogue-card">
                         <a href="#" class="link"></a>
-                        <img src="img/mc2.png" alt="">
+                        <img src="../wp-content/themes/my_theme/images/mc2.png" alt="">
                         <div class="text-wrapper">
                             <p class="text">Соломенные игрушки</p>
                             <div class="price">от 8 500 Р</div>
@@ -130,7 +127,7 @@ Template Post Type: post, page, product
                     </div>
                     <div class="master-class-catalogue-card">
                         <a href="#" class="link"></a>
-                        <img src="img/mc2.png" alt="">
+                        <img src="../wp-content/themes/my_theme/images/mc2.png" alt="">
                         <div class="text-wrapper">
                             <p class="text">Соломенные игрушки хлопушки помпушки</p>
                             <div class="price">от 8 500 Р</div>
@@ -138,7 +135,7 @@ Template Post Type: post, page, product
                     </div>
                     <div class="master-class-catalogue-card">
                         <a href="#" class="link"></a>
-                        <img src="img/mc2.png" alt="">
+                        <img src="../wp-content/themes/my_theme/images/mc2.png" alt="">
                         <div class="text-wrapper">
                             <p class="text">Соломенные игрушки</p>
                             <div class="price">от 8 500 Р</div>
@@ -146,7 +143,7 @@ Template Post Type: post, page, product
                     </div>
                     <div class="master-class-catalogue-card">
                         <a href="#" class="link"></a>
-                        <img src="img/mc2.png" alt="">
+                        <img src="../wp-content/themes/my_theme/images/mc2.png" alt="">
                         <div class="text-wrapper">
                             <p class="text">Соломенные игрушки хлопушки помпушки</p>
                             <div class="price">от 8 500 Р</div>
@@ -154,7 +151,7 @@ Template Post Type: post, page, product
                     </div>
                     <div class="master-class-catalogue-card">
                         <a href="#" class="link"></a>
-                        <img src="img/mc2.png" alt="">
+                        <img src="../wp-content/themes/my_theme/images/mc2.png" alt="">
                         <div class="text-wrapper">
                             <p class="text">Соломенные игрушки</p>
                             <div class="price">от 8 500 Р</div>
@@ -162,7 +159,7 @@ Template Post Type: post, page, product
                     </div>
                     <div class="master-class-catalogue-card">
                         <a href="#" class="link"></a>
-                        <img src="img/mc2.png" alt="">
+                        <img src="../wp-content/themes/my_theme/images/mc2.png" alt="">
                         <div class="text-wrapper">
                             <p class="text">Соломенные игрушки хлопушки помпушки</p>
                             <div class="price">от 8 500 Р</div>
@@ -170,7 +167,7 @@ Template Post Type: post, page, product
                     </div>
                     <div class="master-class-catalogue-card">
                         <a href="#" class="link"></a>
-                        <img src="img/mc2.png" alt="">
+                        <img src="../wp-content/themes/my_theme/images/mc2.png" alt="">
                         <div class="text-wrapper">
                             <p class="text">Соломенные игрушки</p>
                             <div class="price">от 8 500 Р</div>
@@ -178,7 +175,7 @@ Template Post Type: post, page, product
                     </div>
                     <div class="master-class-catalogue-card">
                         <a href="#" class="link"></a>
-                        <img src="img/mc2.png" alt="">
+                        <img src="../wp-content/themes/my_theme/images/mc2.png" alt="">
                         <div class="text-wrapper">
                             <p class="text">Соломенные игрушки хлопушки помпушки</p>
                             <div class="price">от 8 500 Р</div>
@@ -186,7 +183,7 @@ Template Post Type: post, page, product
                     </div>
                     <div class="master-class-catalogue-card">
                         <a href="#" class="link"></a>
-                        <img src="img/mc2.png" alt="">
+                        <img src="../wp-content/themes/my_theme/images/mc2.png" alt="">
                         <div class="text-wrapper">
                             <p class="text">Соломенные игрушки</p>
                             <div class="price">от 8 500 Р</div>
@@ -194,7 +191,7 @@ Template Post Type: post, page, product
                     </div>
                     <div class="master-class-catalogue-card">
                         <a href="#" class="link"></a>
-                        <img src="img/mc2.png" alt="">
+                        <img src="../wp-content/themes/my_theme/images/mc2.png" alt="">
                         <div class="text-wrapper">
                             <p class="text">Соломенные игрушки хлопушки помпушки</p>
                             <div class="price">от 8 500 Р</div>
@@ -202,7 +199,7 @@ Template Post Type: post, page, product
                     </div>
                     <div class="master-class-catalogue-card">
                         <a href="#" class="link"></a>
-                        <img src="img/mc2.png" alt="">
+                        <img src="../wp-content/themes/my_theme/images/mc2.png" alt="">
                         <div class="text-wrapper">
                             <p class="text">Соломенные игрушки</p>
                             <div class="price">от 8 500 Р</div>
@@ -210,7 +207,7 @@ Template Post Type: post, page, product
                     </div>
                     <div class="master-class-catalogue-card">
                         <a href="#" class="link"></a>
-                        <img src="img/mc2.png" alt="">
+                        <img src="../wp-content/themes/my_theme/images/mc2.png" alt="">
                         <div class="text-wrapper">
                             <p class="text">Соломенные игрушки хлопушки помпушки</p>
                             <div class="price">от 8 500 Р</div>
@@ -218,7 +215,7 @@ Template Post Type: post, page, product
                     </div>
                     <div class="master-class-catalogue-card">
                         <a href="#" class="link"></a>
-                        <img src="img/mc2.png" alt="">
+                        <img src="../wp-content/themes/my_theme/images/mc2.png" alt="">
                         <div class="text-wrapper">
                             <p class="text">Соломенные игрушки</p>
                             <div class="price">от 8 500 Р</div>
@@ -226,7 +223,7 @@ Template Post Type: post, page, product
                     </div>
                     <div class="master-class-catalogue-card">
                         <a href="#" class="link"></a>
-                        <img src="img/mc2.png" alt="">
+                        <img src="../wp-content/themes/my_theme/images/mc2.png" alt="">
                         <div class="text-wrapper">
                             <p class="text">Соломенные игрушки хлопушки помпушки</p>
                             <div class="price">от 8 500 Р</div>
@@ -234,7 +231,7 @@ Template Post Type: post, page, product
                     </div>
                     <div class="master-class-catalogue-card">
                         <a href="#" class="link"></a>
-                        <img src="img/mc2.png" alt="">
+                        <img src="../wp-content/themes/my_theme/images/mc2.png" alt="">
                         <div class="text-wrapper">
                             <p class="text">Соломенные игрушки</p>
                             <div class="price">от 8 500 Р</div>
@@ -242,7 +239,7 @@ Template Post Type: post, page, product
                     </div>
                     <div class="master-class-catalogue-card">
                         <a href="#" class="link"></a>
-                        <img src="img/mc2.png" alt="">
+                        <img src="../wp-content/themes/my_theme/images/mc2.png" alt="">
                         <div class="text-wrapper">
                             <p class="text">Соломенные игрушки хлопушки помпушки</p>
                             <div class="price">от 8 500 Р</div>
@@ -308,32 +305,32 @@ Template Post Type: post, page, product
     <section class="profitable-offers-section">
         <div class="container">
             <h2 class="h1 title-with-margin">Выгодные предложения</h2>
-            <div class="three-items-slider">
-                <div class="swiper">
-                    <div class="swiper-wrapper popup-gallery">
-                        <div class="swiper-slide">
-                            <a href="img/pic2.png" class="img-link">
-                                <img src="img/pic2.png" alt="">
+            <div class="three-items-slider instance-0">
+                <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                    <div class="swiper-wrapper popup-gallery" id="swiper-wrapper-5904e6d90b00d1a0" aria-live="polite">
+                        <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" style="width: 399.333px; margin-right: 26px;">
+                            <a href="../wp-content/themes/my_theme/images/pic2.png" class="img-link">
+                                <img src="../wp-content/themes/my_theme/images/pic2.png" alt="">
                             </a>
                         </div>
-                        <div class="swiper-slide">
-                            <a href="img/pic2.png" class="img-link">
-                                <img src="img/pic2.png" alt="">
+                        <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" style="width: 399.333px; margin-right: 26px;">
+                            <a href="../wp-content/themes/my_theme/images/pic2.png" class="img-link">
+                                <img src="../wp-content/themes/my_theme/images/pic2.png" alt="">
                             </a>
                         </div>
-                        <div class="swiper-slide">
-                            <a href="img/pic2.png" class="img-link">
-                                <img src="img/pic2.png" alt="">
+                        <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" style="width: 399.333px; margin-right: 26px;">
+                            <a href="../wp-content/themes/my_theme/images/pic2.png" class="img-link">
+                                <img src="../wp-content/themes/my_theme/images/pic2.png" alt="">
                             </a>
                         </div>
-                        <div class="swiper-slide">
-                            <a href="img/pic2.png" class="img-link">
-                                <img src="img/pic2.png" alt="">
+                        <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" style="width: 399.333px; margin-right: 26px;">
+                            <a href="../wp-content/themes/my_theme/images/pic2.png" class="img-link">
+                                <img src="../wp-content/themes/my_theme/images/pic2.png" alt="">
                             </a>
                         </div>
-                        <div class="swiper-slide">
-                            <a href="img/pic2.png" class="img-link">
-                                <img src="img/pic2.png" alt="">
+                        <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" style="width: 399.333px; margin-right: 26px;">
+                            <a href="../wp-content/themes/my_theme/images/pic2.png" class="img-link">
+                                <img src="../wp-content/themes/my_theme/images/pic2.png" alt="">
                             </a>
                         </div>
 
@@ -360,37 +357,37 @@ Template Post Type: post, page, product
                     <div class="pictures">
                         <div class="team-person-card">
                             <div class="avatar">
-                                <img src="img/ava.jpg" alt="">
+                                <img src="../wp-content/themes/my_theme/images/ava.jpg" alt="">
                             </div>
                             <div class="name">Мария</div>
                         </div>
                         <div class="team-person-card">
                             <div class="avatar">
-                                <img src="img/ava.jpg" alt="">
+                                <img src="../wp-content/themes/my_theme/images/ava.jpg" alt="">
                             </div>
                             <div class="name">Сигизмундроздофил</div>
                         </div>
                         <div class="team-person-card">
                             <div class="avatar">
-                                <img src="img/ava.jpg" alt="">
+                                <img src="../wp-content/themes/my_theme/images/ava.jpg" alt="">
                             </div>
                             <div class="name">Анатолий</div>
                         </div>
                         <div class="team-person-card">
                             <div class="avatar">
-                                <img src="img/ava.jpg" alt="">
+                                <img src="../wp-content/themes/my_theme/images/ava.jpg" alt="">
                             </div>
                             <div class="name">Айран-Жульбан-Углы</div>
                         </div>
                         <div class="team-person-card">
                             <div class="avatar">
-                                <img src="img/ava.jpg" alt="">
+                                <img src="../wp-content/themes/my_theme/images/ava.jpg" alt="">
                             </div>
                             <div class="name">Мария</div>
                         </div>
                         <div class="team-person-card">
                             <div class="avatar">
-                                <img src="img/ava.jpg" alt="">
+                                <img src="../wp-content/themes/my_theme/images/ava.jpg" alt="">
                             </div>
                             <div class="name">Мария</div>
                         </div>
@@ -403,37 +400,43 @@ Template Post Type: post, page, product
     <section class="held-masterclasses-section">
         <div class="container">
             <h2 class="h1 title-with-margin">Проведенные мастер-классы</h2>
-            <div class="four-items-slider mb30">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide held-mc-card">
+            <div class="four-items-slider mb30 instance-0">
+                <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                    <div class="swiper-wrapper" id="swiper-wrapper-fdfd2b1eb2ffea1c" aria-live="polite">
+                        <div class="swiper-slide held-mc-card swiper-slide-active" role="group" aria-label="1 / 5" style="width: 296.75px; margin-right: 21px;">
                             <a href="#" class="img-link">
-                                <img src="img/pic3.jpg" alt="">
+                                <img src="../wp-content/themes/my_theme/images/pic3.jpg" alt="">
                                 <span class="text">Мехенди на выпускном для ребенка на корпоратив</span>
                             </a>
                         </div>
-                        <div class="swiper-slide held-mc-card">
+                        <div class="swiper-slide held-mc-card swiper-slide-active" role="group" aria-label="1 / 5" style="width: 296.75px; margin-right: 21px;">
                             <a href="#" class="img-link">
-                                <img src="img/pic3.jpg" alt="">
+                                <img src="../wp-content/themes/my_theme/images/pic3.jpg" alt="">
                                 <span class="text">Мехенди на выпускном для ребенка на корпоратив</span>
                             </a>
                         </div>
-                        <div class="swiper-slide held-mc-card">
+                        <div class="swiper-slide held-mc-card swiper-slide-active" role="group" aria-label="1 / 5" style="width: 296.75px; margin-right: 21px;">
                             <a href="#" class="img-link">
-                                <img src="img/pic3.jpg" alt="">
+                                <img src="../wp-content/themes/my_theme/images/pic3.jpg" alt="">
                                 <span class="text">Мехенди на выпускном для ребенка на корпоратив</span>
                             </a>
                         </div>
-                        <div class="swiper-slide held-mc-card">
+                        <div class="swiper-slide held-mc-card swiper-slide-active" role="group" aria-label="1 / 5" style="width: 296.75px; margin-right: 21px;">
                             <a href="#" class="img-link">
-                                <img src="img/pic3.jpg" alt="">
+                                <img src="../wp-content/themes/my_theme/images/pic3.jpg" alt="">
+                                <span class="text">Мехенди на выпускном для ребенка на корпоратив</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide held-mc-card swiper-slide-active" role="group" aria-label="1 / 5" style="width: 296.75px; margin-right: 21px;">
+                            <a href="#" class="img-link">
+                                <img src="../wp-content/themes/my_theme/images/pic3.jpg" alt="">
                                 <!-- думаю, размер этого текста, а именно количество символов надо регулировать на беке -->
                                 <span class="text">Мехенди на выпускном для ребенка на корпоратив бла бла бла бла бла бла блша харикришнахарихари</span>
                             </a>
                         </div>
-                        <div class="swiper-slide held-mc-card">
+                        <div class="swiper-slide held-mc-card swiper-slide-active" role="group" aria-label="1 / 5" style="width: 296.75px; margin-right: 21px;">
                             <a href="#" class="img-link">
-                                <img src="img/pic3.jpg" alt="">
+                                <img src="../wp-content/themes/my_theme/images/pic3.jpg" alt="">
                                 <span class="text">Мехенди на выпускном для ребенка на корпоратив</span>
                             </a>
                         </div>
@@ -482,29 +485,29 @@ Template Post Type: post, page, product
     <section class="reviews-section">
         <div class="container">
             <h2 class="h1 title-with-margin">Отзывы</h2>
-            <div class="any-items-slider">
-                <div class="swiper">
-                    <div class="swiper-wrapper popup-gallery">
-                        <div class="swiper-slide review-slide">
-                            <a class="img-link" href="img/review.jpg"><img src="img/review.jpg" alt=""></a>
+            <div class="any-items-slider instance-0">
+                <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                    <div class="swiper-wrapper popup-gallery" id="swiper-wrapper-e14cb101060dd6a1080" aria-live="polite">
+                        <div class="swiper-slide review-slide swiper-slide-active" aria-live="polite" role="group" aria-label="1 / 7" style="margin-right: 30px;">
+                            <a class="img-link" href="../wp-content/themes/my_theme/images/review.jpg"><img src="../wp-content/themes/my_theme/images/review.jpg" alt=""></a>
                         </div>
-                        <div class="swiper-slide review-slide">
-                            <a class="img-link" href="img/review.jpg"><img src="img/review.jpg" alt=""></a>
+                        <div class="swiper-slide review-slide swiper-slide-active" aria-live="polite" role="group" aria-label="1 / 7" style="margin-right: 30px;">
+                            <a class="img-link" href="../wp-content/themes/my_theme/images/review.jpg"><img src="../wp-content/themes/my_theme/images/review.jpg" alt=""></a>
                         </div>
-                        <div class="swiper-slide review-slide">
-                            <a class="img-link" href="img/review.jpg"><img src="img/review.jpg" alt=""></a>
+                        <div class="swiper-slide review-slide swiper-slide-active" aria-live="polite" role="group" aria-label="1 / 7" style="margin-right: 30px;">
+                            <a class="img-link" href="../wp-content/themes/my_theme/images/review.jpg"><img src="../wp-content/themes/my_theme/images/review.jpg" alt=""></a>
                         </div>
-                        <div class="swiper-slide review-slide">
-                            <a class="img-link" href="img/review.jpg"><img src="img/review.jpg" alt=""></a>
+                        <div class="swiper-slide review-slide swiper-slide-active" aria-live="polite" role="group" aria-label="1 / 7" style="margin-right: 30px;">
+                            <a class="img-link" href="../wp-content/themes/my_theme/images/review.jpg"><img src="../wp-content/themes/my_theme/images/review.jpg" alt=""></a>
                         </div>
-                        <div class="swiper-slide review-slide">
-                            <a class="img-link" href="img/review.jpg"><img src="img/review.jpg" alt=""></a>
+                        <div class="swiper-slide review-slide swiper-slide-active" aria-live="polite" role="group" aria-label="1 / 7" style="margin-right: 30px;">
+                            <a class="img-link" href="../wp-content/themes/my_theme/images/review.jpg"><img src="../wp-content/themes/my_theme/images/review.jpg" alt=""></a>
                         </div>
-                        <div class="swiper-slide review-slide">
-                            <a class="img-link" href="img/review.jpg"><img src="img/review.jpg" alt=""></a>
+                        <div class="swiper-slide review-slide swiper-slide-active" aria-live="polite" role="group" aria-label="1 / 7" style="margin-right: 30px;">
+                            <a class="img-link" href="../wp-content/themes/my_theme/images/review.jpg"><img src="../wp-content/themes/my_theme/images/review.jpg" alt=""></a>
                         </div>
-                        <div class="swiper-slide review-slide">
-                            <a class="img-link" href="img/review.jpg"><img src="img/review.jpg" alt=""></a>
+                        <div class="swiper-slide review-slide swiper-slide-active" aria-live="polite" role="group" aria-label="1 / 7" style="margin-right: 30px;">
+                            <a class="img-link" href="../wp-content/themes/my_theme/images/review.jpg"><img src="../wp-content/themes/my_theme/images/review.jpg" alt=""></a>
                         </div>
 
 
@@ -558,7 +561,10 @@ Template Post Type: post, page, product
 
 </footer>
 
-<script src="js/scripts.min.js"></script>
+<script src="../wp-content/themes/my_theme/js/scripts.min.js"></script>
 
 </body>
 </html>
+
+
+
