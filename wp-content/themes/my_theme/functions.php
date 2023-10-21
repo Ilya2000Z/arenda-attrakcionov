@@ -3004,7 +3004,8 @@ add_filter( 'media_library_infinite_scrolling', '__return_true' );
 
 require_once('functions-new.php');
 
-add_shortcode('feedbacks_shortcode', 'feedback_shortcode');
+add_shortcode('sales_shortcode', 'feedback_shortcode');
+
 function feedback_shortcode() {
     if(is_category() || is_tag()) {
         $sale_slider = get_field('feedback_slider', get_queried_object());
@@ -3017,7 +3018,7 @@ function feedback_shortcode() {
     //$sale_slider = get_field('sale_slider', 'options');
     $output = '<div class="sales-slider__wrapper"><span class="title-headline">отзывы</span><div class="sales-slider">';
     foreach($sale_slider as $item) {
-       /* if ($item['color'] == 1){
+        if ($item['color'] == 1){
             $color = 'sale-blue-overlay-min.png';
             $colorClass = '1';
         } elseif ($item['color'] == 2) {
@@ -3029,7 +3030,7 @@ function feedback_shortcode() {
         } elseif ($item['color'] == 4) {
             $color = 'sale-red-overlay-min.png';
             $colorClass = '4';
-        }*/
+        }
         $output .= '<a href="'.$item['lnk'].'" class="item-to-slider" style="width: 230px !important;height: 100%;">';
         $output .= '<span class=""><img src="'.$item['img'].'"></span>';
         $output .= '</a>';
