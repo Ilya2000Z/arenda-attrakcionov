@@ -3003,3 +3003,45 @@ add_action( 'wp_ajax_nopriv_arenda_filter_ajax_request', 'arenda_filter_ajax_req
 add_filter( 'media_library_infinite_scrolling', '__return_true' );
 
 require_once('functions-new.php');
+
+add_shortcode('feedbacks_shortcode', 'feedback_shortcode');
+function feedback_shortcode() {
+    if(is_category() || is_tag()) {
+        $sale_slider = get_field('feedback_slider', get_queried_object());
+        if(!$sale_slider) {
+            $sale_slider = get_field('feedback_slider', 'options');
+        }
+    } else {
+        $sale_slider = get_field('feedback_slider', 'options');
+    }
+    //$sale_slider = get_field('sale_slider', 'options');
+    $output = '<div class="sales-slider__wrapper"><span class="title-headline">отзывы</span><div class="sales-slider">';
+    foreach($sale_slider as $item) {
+       /* if ($item['color'] == 1){
+            $color = 'sale-blue-overlay-min.png';
+            $colorClass = '1';
+        } elseif ($item['color'] == 2) {
+            $color = 'sale-green-overlay-min.png';
+            $colorClass = '2';
+        } elseif ($item['color'] == 3) {
+            $color = 'sale-orange-overlay-min.png';
+            $colorClass = '3';
+        } elseif ($item['color'] == 4) {
+            $color = 'sale-red-overlay-min.png';
+            $colorClass = '4';
+        }*/
+        $output .= '<a href="'.$item['lnk'].'" class="sales-slider__item sales-slider__item-bg-'.$colorClass.'" style="background-image:url('.$item['img'].')">';
+        $output .= '<span class="sales-btn-title">'.$item['ttl'].'</span>';
+        $output .= '<span class="sales-btn-top-wrapper">';
+        $output .= '<span class="sales-btn-top">'.$item['top'].'</span>';
+        $output .= '<span class="sales-overlay sales-overlay--top" style="background-image:url(/wp-content/themes/my_theme/images/sale-top-overlay-min.png)"></span>';
+        $output .= '</span>';
+        $output .= '<span class="sales-btn-bottom-wrapper">';
+        $output .= '<span class="sales-btn-bottom">'.$item['bottom'].'</span>';
+        $output .= '<span class="sales-overlay sales-overlay--bottom" style="background-image:url(/wp-content/themes/my_theme/images/'.$color.')"></span>';
+        $output .= '</span>';
+        $output .= '</a>';
+    }
+    $output .= '</div></div>';
+    return $output;
+}

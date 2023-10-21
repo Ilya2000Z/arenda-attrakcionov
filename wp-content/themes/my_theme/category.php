@@ -1037,38 +1037,39 @@ if (1 == 2) {
                         <section class="reviews-section">
                             <div class="container">
                                 <h2 class="h1 title-with-margin">Отзывы</h2>
-                                <div class="any-items-slider reviews-slider">
-                                    <div class="swiper">
-                                        <div class="swiper-wrapper popup-gallery">
-                                            <div class="swiper-slide review-slide">
-                                                <a class="img-link" href="/wp-content/uploads/review-1.jpg"><img src="/wp-content/uploads/review-1.jpg" alt=""></a>
-                                            </div>
-                                            <div class="swiper-slide review-slide">
-                                                <a class="img-link" href="/wp-content/uploads/review-1.jpg"><img src="/wp-content/uploads/review-1.jpg" alt=""></a>
-                                            </div>
-                                            <div class="swiper-slide review-slide">
-                                                <a class="img-link" href="/wp-content/uploads/review-1.jpg"><img src="/wp-content/uploads/review-1.jpg" alt=""></a>
-                                            </div>
-                                            <div class="swiper-slide review-slide">
-                                                <a class="img-link" href="/wp-content/uploads/review-1.jpg"><img src="/wp-content/uploads/review-1.jpg" alt=""></a>
-                                            </div>
-                                            <div class="swiper-slide review-slide">
-                                                <a class="img-link" href="/wp-content/uploads/review-1.jpg"><img src="/wp-content/uploads/review-1.jpg" alt=""></a>
-                                            </div>
-                                            <div class="swiper-slide review-slide">
-                                                <a class="img-link" href="/wp-content/uploads/review-1.jpg"><img src="/wp-content/uploads/review-1.jpg" alt=""></a>
-                                            </div>
-                                            <div class="swiper-slide review-slide">
-                                                <a class="img-link" href="/wp-content/uploads/review-1.jpg"><img src="/wp-content/uploads/review-1.jpg" alt=""></a>
-                                            </div>
-
-
-
-                                        </div>
-                                    </div>
-                                    <div class="swiper-button-next"><span>></span></div>
-                                    <div class="swiper-button-prev"><span><</span></div>
-                                </div>
+                                <?= do_shortcode('[feedbacks_shortcode]') ?>
+<!--                                <div class="any-items-slider reviews-slider">-->
+<!--                                    <div class="swiper">-->
+<!--                                        <div class="swiper-wrapper popup-gallery">-->
+<!--                                            <div class="swiper-slide review-slide">-->
+<!--                                                <a class="img-link" href="/wp-content/uploads/review-1.jpg"><img src="/wp-content/uploads/review-1.jpg" alt=""></a>-->
+<!--                                            </div>-->
+<!--                                            <div class="swiper-slide review-slide">-->
+<!--                                                <a class="img-link" href="/wp-content/uploads/review-1.jpg"><img src="/wp-content/uploads/review-1.jpg" alt=""></a>-->
+<!--                                            </div>-->
+<!--                                            <div class="swiper-slide review-slide">-->
+<!--                                                <a class="img-link" href="/wp-content/uploads/review-1.jpg"><img src="/wp-content/uploads/review-1.jpg" alt=""></a>-->
+<!--                                            </div>-->
+<!--                                            <div class="swiper-slide review-slide">-->
+<!--                                                <a class="img-link" href="/wp-content/uploads/review-1.jpg"><img src="/wp-content/uploads/review-1.jpg" alt=""></a>-->
+<!--                                            </div>-->
+<!--                                            <div class="swiper-slide review-slide">-->
+<!--                                                <a class="img-link" href="/wp-content/uploads/review-1.jpg"><img src="/wp-content/uploads/review-1.jpg" alt=""></a>-->
+<!--                                            </div>-->
+<!--                                            <div class="swiper-slide review-slide">-->
+<!--                                                <a class="img-link" href="/wp-content/uploads/review-1.jpg"><img src="/wp-content/uploads/review-1.jpg" alt=""></a>-->
+<!--                                            </div>-->
+<!--                                            <div class="swiper-slide review-slide">-->
+<!--                                                <a class="img-link" href="/wp-content/uploads/review-1.jpg"><img src="/wp-content/uploads/review-1.jpg" alt=""></a>-->
+<!--                                            </div>-->
+<!---->
+<!---->
+<!---->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="swiper-button-next"><span>></span></div>-->
+<!--                                    <div class="swiper-button-prev"><span><</span></div>-->
+<!--                                </div>-->
                             </div>
                         </section>
                     </div>
