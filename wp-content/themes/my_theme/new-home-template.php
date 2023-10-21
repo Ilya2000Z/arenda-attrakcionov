@@ -12,8 +12,16 @@ $info_txt_btn = get_field('info_txt_btn');
 $info_lnk_btn = get_field('info_lnk_btn');
 $info_sml_txt_btn = get_field('info_sml_txt_btn');
 $info_img = get_field('info_img');
-$cnt_list = get_field('cnt_list');
+$cnt_list = get_field('cnt_list');function debug_to_console($data) {
+    $output = $data;
+    if (is_array($output))
+        $output = implode(',', $output);
+
+    echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
+}
 ?>
+
+
 <div class="container home-slider-wrapper">
 	<div class="home-slider" style="max-height:400px;overflow: hidden;">
 		<? foreach($main_slider as $slide) { ?>
@@ -106,68 +114,86 @@ $cnt_list = get_field('cnt_list');
         <div class="container">
             <h2 class="h1 title-with-margin">Категории мастер-классов</h2>
             <div class="master-class-cards-wrapper">
-                <div class="master-class-card">
-                    <a href="#" class="link"></a>
-                    <img src="/wp-content/uploads/mc1-1.jpg" alt="">
-                    <p class="text">Кулинарные</p>
-                </div>
-                <div class="master-class-card">
-                    <a href="#" class="link"></a>
-                    <img src="/wp-content/uploads/mc1-1.jpg" alt="">
-                    <p class="text">Для детей</p>
-                </div>
-                <div class="master-class-card">
-                    <a href="#" class="link"></a>
-                    <img src="/wp-content/uploads/mc1-1.jpg" alt="">
-                    <p class="text">Для взрослых</p>
-                </div>
-                <div class="master-class-card">
-                    <a href="#" class="link"></a>
-                    <img src="/wp-content/uploads/mc1-1.jpg" alt="">
-                    <p class="text">Для женщин</p>
-                </div>
-                <div class="master-class-card">
-                    <a href="#" class="link"></a>
-                    <img src="/wp-content/uploads/mc1-1.jpg" alt="">
-                    <p class="text">Для мужчин</p>
-                </div>
-                <div class="master-class-card">
-                    <a href="#" class="link"></a>
-                    <img src="/wp-content/uploads/mc1-1.jpg" alt="">
-                    <p class="text">Корпоративные</p>
-                </div>
-                <div class="master-class-card">
-                    <a href="#" class="link"></a>
-                    <img src="/wp-content/uploads/mc1-1.jpg" alt="">
-                    <p class="text">Творческие</p>
-                </div>
-                <div class="master-class-card">
-                    <a href="#" class="link"></a>
-                    <img src="/wp-content/uploads/mc1-1.jpg" alt="">
-                    <p class="text">Роспись</p>
-                </div>
-                <div class="master-class-card">
-                    <a href="#" class="link"></a>
-                    <img src="/wp-content/uploads/mc1-1.jpg" alt="">
-                    <p class="text">Быстрые</p>
-                </div>
-                <div class="master-class-card">
-                    <a href="#" class="link"></a>
-                    <img src="/wp-content/uploads/mc1-1.jpg" alt="">
-                    <p class="text">Экологические</p>
-                </div>
-                <div class="master-class-card">
-                    <a href="#" class="link"></a>
-                    <img src="/wp-content/uploads/mc1-1.jpg" alt="">
-                    <p class="text">Популярные</p>
-                </div>
-                <div class="master-class-card">
-                    <a href="#" class="link"></a>
-                    <img src="/wp-content/uploads/mc1-1.jpg" alt="">
-                    <p class="text">Тематические</p>
-                </div>
+
+                <?
+                $cat = get_category(get_query_var('cat'), false);
+                if (1 == 2) {
+                    $args = array('parent' => $cat->term_id);
+                    $menu_name = 'custom_accordion_menu';
+                    $locations = get_nav_menu_locations();
+                    $menu_accordion_items = wp_get_nav_menu_items($locations[$menu_name]);
+                    $thisURL = get_nopaging_url();
+                    foreach ($menu_accordion_items as $menu_item) {
+                        if ($thisURL == $menu_item->url) {
+                            $main_level = $menu_item->menu_item_parent;
+                            $sub_categories = get_nav_menu_item_children($menu_item->menu_item_parent, $menu_accordion_items);
+                            if (count($sub_categories)) {
+                                $i = 1;
+                                foreach ($sub_categories as $category) {
+                                    if (get_field('скрыть_в_блоке_над_аккордионом', $category->ID)) {
+                                        continue;
+                                    }
+                                    $active_element = '<a href="' . $category->url . '" class="filter-item">';
+                                    $active_element_end = '</a>';
+                                    if ($menu_item->ID == $category->ID) {
+                                        $active_element = '<span class="filter-item filter-item--active">';
+                                        $active_element_end = '</span>';
+                                    }
+                                    echo $active_element;
+                                    $icon = get_field('иконка', $category->ID);
+                                    $rubrika = get_field('рубрика', $category->ID);
+                                    // if(is_user_logged_in(  )) {
+                                    // 	var_dump($rubrika);
+                                    // }
+                                    $ttl = get_field('название_для_блока_над_аккордионом', $category->ID); ?>
+                                    <img width="42" height="42" class="filter-item_img" src="<?= $icon ? $icon : '/wp-content/uploads/123.png'; ?>" alt="<?= $category->title ?>" title="<?= $category->title ?>">
+                                    <span class="filter-item_txt"><?= $ttl ? $ttl : $category->title; ?></span>
+                                    <?
+                                    echo $active_element_end;
+                                    $i++;
+                                }
+                            }
+                            break;
+                        }
+                    }
+                }
+                $labels = get_field('метки', $cat);
+                if ($labels) {
+                    debug_to_console('test3');
+                    $hash = sanitize_text_field(explode('label=',$_GET['q'])[1]); ?>
+                    <span class="filter-item filter-item-all <?= $hash ? '' : 'filter-item--active'; ?>">Все</span>
+                    <? foreach ($labels as $label) {
+                        $icon = $label['иконка'];
+                        $label_text = $label['название_метки'];
+                        $ttl = $label['текст'];
+                        if(!empty($label['рубрика'])) {
+                            $catID = $label['рубрика'];
+                            $termItemLink = get_term_link((int) $catID);
+                        }
+                        ?>
+                        <?php
+                        if(isset($termItemLink)) {
+                            debug_to_console('test2');
+                            ?>
+                            <a href="<?= $termItemLink ?>" class="filter-item">
+                                <img width="42" height="42" class="filter-item_img" src="<?= $icon ? $icon : '/wp-content/uploads/123.png'; ?>" alt="<?= $ttl ?>" title="<?= $ttl ?>">
+                                <span class="filter-item_txt"><?= $ttl ?></span>
+                            </a>
+                            <?
+                            unset($termItemLink);
+                        } else { debug_to_console('test1'); ?>
+                            <a style="display:none;" href="<?= $thisURL . '?label=' . $label_text ?>"><?= $ttl ?></a>
+                            <span data-label="<?= $label_text ?>" class="filter-item filter-item-label <?= $hash == $label_text ? 'filter-item--active' : ''; ?>">
+										<img width="42" height="42" class="filter-item_img" src="<?= $icon ? $icon : '/wp-content/uploads/123.png'; ?>" alt="<?= $ttl ?>" title="<?= $ttl ?>">
+										<span class="filter-item_txt"><?= $ttl ?></span>
+									</span>
+                            <?
+                        }
+                    }
+                    ?>
+                <? } ?>
+
             </div>
-        </div>
     </section>
 </div>
 <div>
