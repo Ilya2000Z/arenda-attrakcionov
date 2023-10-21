@@ -1167,3 +1167,4 @@ if(jQuery(".sticky-accordion > div").length) {
     offset_top: 90
   });
 }
+
