@@ -3030,16 +3030,8 @@ function feedback_shortcode() {
             $color = 'sale-red-overlay-min.png';
             $colorClass = '4';
         }*/
-        $output .= '<a href="'.$item['lnk'].'" class="sales-slider__item sales-slider__item-bg-'.$colorClass.'" style="background-image:url('.$item['img'].')">';
-        $output .= '<span class="sales-btn-title">'.$item['ttl'].'</span>';
-        $output .= '<span class="sales-btn-top-wrapper">';
-        $output .= '<span class="sales-btn-top">'.$item['top'].'</span>';
-        $output .= '<span class="sales-overlay sales-overlay--top" style="background-image:url(/wp-content/themes/my_theme/images/sale-top-overlay-min.png)"></span>';
-        $output .= '</span>';
-        $output .= '<span class="sales-btn-bottom-wrapper">';
-        $output .= '<span class="sales-btn-bottom">'.$item['bottom'].'</span>';
-        $output .= '<span class="sales-overlay sales-overlay--bottom" style="background-image:url(/wp-content/themes/my_theme/images/'.$color.')"></span>';
-        $output .= '</span>';
+        $output .= '<a href="'.$item['lnk'].'" class="item-to-slider" style="width: 230px !important;height: 100%;">';
+        $output .= '<span class=""><img src="'.$item['img'].'"></span>';
         $output .= '</a>';
     }
     $output .= '</div></div>';
