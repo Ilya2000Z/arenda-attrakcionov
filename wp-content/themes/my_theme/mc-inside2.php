@@ -1,51 +1,28 @@
 <?php
-/*
-Template Name: внутряк2
-Template Post Type: post, page, product
-*/
-
+/**
+ * Template Name: внутряк2
+ */
 get_header('new');
+$main_slider = get_field('main_slider');
+$post_list = get_field('post_list_копия');
+$posts_list_ttl = get_field('posts_list_ttl');
+$info_ttl = get_field('info_ttl');
+$info_txt = get_field('info_txt');
+$info_txt_btn = get_field('info_txt_btn');
+$info_lnk_btn = get_field('info_lnk_btn');
+$info_sml_txt_btn = get_field('info_sml_txt_btn');
+$info_img = get_field('info_img');
+$cnt_list = get_field('cnt_list');function debug_to_console($data) {
+    $output = $data;
+    if (is_array($output))
+        $output = implode(',', $output);
+
+    echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
+}
 ?>
 
-
-<html lang="ru">
-
-<head>
-
-    <meta charset="utf-8">
-    <!-- <base href="/"> -->
-
-    <title>Мехенди на выпускном для ребенка на корпоратив</title>
-    <meta name="description" content="">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- Template Basic Images Start -->
-    <meta property="og:image" content="path/to/image.jpg">
-    <link rel="icon" href="../wp-content/themes/my_theme/images/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="../wp-content/themes/my_theme/images/favicon/apple-touch-icon-180x180.png">
-    <!-- Template Basic Images End -->
-
-    <!-- Custom Browsers Color Start -->
-    <meta name="theme-color" content="#000">
-    <!-- Custom Browsers Color End -->
-
-    <link rel="stylesheet" href="../wp-content/themes/my_theme/css/main.min.css">
-
-</head>
-
-<body class="mc-inside2-page">
-
-<!-- Custom HTML -->
-
+<link rel="stylesheet" href="../wp-content/themes/my_theme/css/main.min.css">
 <div class="main-content">
-    <header>
-        <!-- в контейнер я ее поместил для красоты -->
-        <div class="container">
-            шапку забираем отсюда <a href="https://arenda-attrakcionov.ru/">https://arenda-attrakcionov.ru/</a>
-        </div>
-    </header>
     <div class="container">
         <nav class="usual-breadcrumbs">
             <ul>
@@ -192,11 +169,342 @@ get_header('new');
     </div>
 
 </div>
-<footer>
 
-</footer>
-
-<script src="js/scripts.min.js"></script>
-
-</body>
-</html>
+<?php
+get_footer('new');
+?>
+<script>
+    var $slickEl = $('.custom-modal .slider');
+    $slickEl.slick({
+        centerMode: true,
+        centerPadding: '100px',
+        slidesToShow: 3,
+        focusOnSelect: true,
+        dots: false,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    centerPadding: '0',
+                    arrows: true,
+                    centerMode: true,
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    centerPadding: '0',
+                    arrows: true,
+                    centerMode: true,
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    centerPadding: '0',
+                    arrows: true,
+                    centerMode: true,
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 0,
+                settings: {
+                    centerPadding: '0',
+                    arrows: true,
+                    centerMode: true,
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+    $slickEl.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+        var i = (currentSlide ? currentSlide : 0) + 1;
+    });
+    var stopFlag = true;
+    var isVideo = false;
+    var currentVideo;
+    var stopTicking = false;
+    var poster = '';
+    var setLabel = false;
+    var isDisableElements = false;
+    var isPlaySound = false;
+    var glVideos;
+    var glSoundsControls;
+    var currentSlideAnal = 0;
+    var widgetTitle = '';
+    var widgetDescription = ``;
+    var widgetBtnTitle = '';
+    var widgetBtnLink = '#';
+    var isShowWidget = false;
+    var widgetBtnColor = '#583a88';
+    var widgetUtmsTrack = false;
+    //--------------------------
+    function stopSlider () {
+        stopTicking = true;
+        if (currentVideo && currentVideo.length && currentVideo.length !== 0) {
+            currentVideo[0].pause();
+        }
+    }
+    function startSlider () {
+        stopTicking = false;
+        if (currentVideo && currentVideo.length && currentVideo.length !== 0) {
+            currentVideo[0].play();
+        }
+    }
+    function checkIsVideoPlaying(videoElement) {
+        return videoElement.currentTime > 0 && !videoElement.paused && !videoElement.ended && videoElement.readyState > 2;
+    }
+    function CreatePlayPauseElements () {
+        $('.pause-control').remove()
+        var soundsControls = $('.sound-control')
+        function Pause () {
+            $(this).removeClass('pause-control_pause')
+            $(this).addClass('pause-control_play')
+            glVideos[this.dataset.index].pause()
+            stopSlider()
+            this.removeEventListener('click', Pause)
+            this.addEventListener('click', Play)
+        }
+        function Play () {
+            $(this).removeClass('pause-control_play')
+            $(this).addClass('pause-control_pause')
+            glVideos[this.dataset.index].play()
+            startSlider()
+            this.removeEventListener('click', Play)
+            this.addEventListener('click', Pause)
+        }
+        if (soundsControls.length > 0) {
+            soundsControls.each(function(index, element) {
+                $(element).after('<div data-index=' + index + ' class="pause-control pause-control_pause"></div>')
+                document.getElementsByClassName('pause-control')[index].addEventListener('click', Pause)
+            })
+        }
+    }
+    setTimeout(function() {
+        $('.custom-modal .slick-arrow').click(function() {
+            CreatePlayPauseElements()
+            startSlider()
+        })
+    }, 500)
+    glVideos = $('.sound-control').parent().find('video')
+    $('.stop-slider').click(function() {
+        stopSlider()
+        $('.custom-modal .slider').slick("slickSetOption", "swipe", false);
+    })
+    $('.start-slider').click(function() {
+        startSlider()
+        $('.custom-modal .slider').slick("slickSetOption", "swipe", true);
+    })
+    // Ticking machine
+    var defaultTime = 10;
+    var percentTime;
+    var tick;
+    var time = defaultTime;
+    var progressBarIndex = 0;
+    var slidesNumber = 5;
+    var slides = slidesNumber - 1
+    var unmuteClass = 'sound-control_unmute';
+    $('.progressBarContainer .progressBar').each(function (index) {
+        var progress = "<div class='inProgress inProgress" + index + "'></div>";
+        $(this).html(progress);
+    });
+    var isMuted = true;
+    var videos = $("video");
+    var soundControls = $('.sound-control');
+    var onceSoundControlMode = 'default'
+    soundControls.click(function(e) {
+        if (isDisableElements) {
+            return
+        }
+        e.stopPropagation();
+        if (onceSoundControlMode == 'default') {
+            isMuted = !isMuted;
+            soundControls.toggleClass(unmuteClass, isMuted);
+            $(videos).prop('muted', isMuted);
+        }
+        if (onceSoundControlMode == 'all_videos') {
+            var video = $(this).parent().find('video')
+            var curentSoundStatus = video.prop('muted')
+            isMuted = !curentSoundStatus
+            soundControls.toggleClass(unmuteClass, !curentSoundStatus);
+            video.prop('muted', !curentSoundStatus)
+        }
+    });
+    function startProgressbar() {
+        resetProgressbar()
+        const ItemsForFill = []
+        for (var i = 0; i < progressBarIndex; i++) {
+            $('.inProgress').eq(i).css({
+                width: '100%'
+            })
+        }
+        currentVideo = $('.custom-modal .slide').eq(progressBarIndex).find('video');
+        isVideo = currentVideo.length !== 0;
+        soundControls.hide();
+        console.log(progressBarIndex)
+        videos.each(function() {
+            var video = $(this);
+            if (progressBarIndex != 0) {
+                onceSoundControlMode = 'default'
+                video.prop('muted', isMuted)
+            }
+            video.get(0).currentTime = 0;
+            video.get(0).pause();
+        });
+        if (isVideo) {
+            var soundControl = $('.custom-modal .slide').eq(progressBarIndex).find('.sound-control');
+            $(soundControl).show();
+            currentVideo.on(
+                "timeupdate",
+                function(event){
+                    var that = this
+                    time = this.duration
+                    if (isNaN(time)) {
+                        var loadVideoTimer = setInterval(function() {
+                            if (!isNaN(that.duration)) {
+                                clearInterval(loadVideoTimer)
+                                time = that.duration
+                            }
+                        })
+                    }
+                })
+            var isPlaying = checkIsVideoPlaying(currentVideo);
+            if (!isPlaying) {
+                currentVideo[0].play();
+            }
+        } else {
+            $('video').off()
+            time = defaultTime
+        }
+        percentTime = 0;
+        tick = setInterval(interval, 10);
+    }
+    function interval() {
+        if (stopTicking) {
+            return;
+        }
+        if (!($('.custom-modal .slider .slick-track div[data-slick-index="' + progressBarIndex + '"]').hasClass("slick-center"))) {
+            progressBarIndex = $('.custom-modal .slider .slick-track div[class="slide slick-slide slick-current slick-center"]').attr("data-slick-index");
+            startProgressbar();
+        } else {
+            if (stopFlag) {
+                if (isVideo) {
+                }
+                percentTime += 1 / time;
+                $('.inProgress' + progressBarIndex).css({
+                    width: percentTime + "%"
+                });
+                if (percentTime >= 100) {
+                    $('.custom-modal .slider').slick('slickNext');
+                    progressBarIndex++;
+                    currentVideo = $('.custom-modal .slide').eq(progressBarIndex).find('video')
+                    isVideo = currentVideo.length !== 0
+                    if (isVideo) {
+                        currentVideo.on(
+                            "timeupdate",
+                            function(event) {
+                                var that = this
+                                time = this.duration
+                                if (isNaN(time)) {
+                                    var loadVideoTimer = setInterval(function() {
+                                        if (!isNaN(that.duration)) {
+                                            clearInterval(loadVideoTimer)
+                                            time = that.duration
+                                            //console.log(time)
+                                        }
+                                    })
+                                }
+                            })
+                        currentVideo[0].currentTime = 0
+                    } else {
+                        $('video').off()
+                        time = defaultTime
+                    }
+                    if (progressBarIndex > slides) {
+                        stopProgressbar()
+                    } else {
+                        startProgressbar();
+                    }
+                }
+            }
+        }
+    }
+    function resetProgressbar() {
+        $('.inProgress').css({
+            width: 0 + '%'
+        });
+        clearInterval(tick);
+    }
+    function stopProgressbar() {
+        $('.inProgress .inProgress' + slides).css({
+            width: 100 + '%'
+        });
+        clearInterval(tick);
+    }
+    $('.slick-replay').click(function () {
+        clearInterval(tick);
+        var goToThisIndex = $(this).find("span").attr("data-slick-index");
+        $('.custom-modal .slider').slick('slickGoTo', 0);
+        startProgressbar();
+    });
+    $('.iplay').click(function(){
+        if(!$(this).hasClass('active')) {
+            stopSlider();
+        } else {
+            startProgressbar();
+        }
+        $(this).toggleClass('active');
+    })
+    $('.progressBarContainer div').click(function () {
+        if (isDisableElements) {
+            return
+        }
+        startSlider()
+        CreatePlayPauseElements()
+        clearInterval(tick);
+        var goToThisIndex = $(this).find("span").attr("data-slick-index");
+        $('.custom-modal .slider').slick('slickGoTo', goToThisIndex, false);
+        startProgressbar();
+    });
+    var $div = $('.slick-track .slick-slide:last-child');
+    var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.attributeName === "class") {
+                clearInterval(tick);
+                var goToThisIndex = $(this).find("span").attr("data-slick-index");
+                $('.custom-modal .slider').slick('slickGoTo', 0);
+                startProgressbar();
+            }
+        });
+    });
+    observer.observe($div[0], {
+        attributes: true
+    });
+    //startProgressbar();
+    $('.custom-modal .slide').click(function (e) {
+        if ($(this).hasClass('slick-current')) {
+            return;
+        }
+        if (isDisableElements) {
+            return
+        }
+        startSlider()
+        CreatePlayPauseElements()
+        clearInterval(tick);
+        var goToThisIndex = $(this).find("span").attr("data-slick-index");
+        $('.custom-modal .slider').slick('slickGoTo', goToThisIndex, false);
+        startProgressbar();
+    });
+    $('.storis-btn, .custom-modal_close').click(function(){
+        $('.custom-modal').toggleClass('active');
+        startProgressbar();
+    })
+    $('.custom-modal_close').click(function(){
+        stopSlider();
+    })
+    /////////////
+</script>

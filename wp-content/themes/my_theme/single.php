@@ -1,7 +1,23 @@
 <?php
 
 get_header('new');
+get_header('new');
+$main_slider = get_field('main_slider');
+$post_list = get_field('post_list_копия');
+$posts_list_ttl = get_field('posts_list_ttl');
+$info_ttl = get_field('info_ttl');
+$info_txt = get_field('info_txt');
+$info_txt_btn = get_field('info_txt_btn');
+$info_lnk_btn = get_field('info_lnk_btn');
+$info_sml_txt_btn = get_field('info_sml_txt_btn');
+$info_img = get_field('info_img');
+$cnt_list = get_field('cnt_list');function debug_to_console($data) {
+    $output = $data;
+    if (is_array($output))
+        $output = implode(',', $output);
 
+    echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
+}
 ?>
 
 <?php
@@ -24,7 +40,7 @@ if (preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*
 //var_dump($vido);
 
 ?>
-
+<link rel="stylesheet" href="../wp-content/themes/my_theme/css/main.min.css">
 <div class="right2 container">
 
     <!-- <div style="display:flex;flex-wrap:nowrap;justify-content:space-around;">
@@ -743,9 +759,7 @@ if (preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*
 
     </div>
 </div>
-<footer>
 
-</footer>
 
 <div class="mfp-hide popup-block" id="feedback-popup">
     <h2 class="title">Варианты связи</h2>
@@ -778,7 +792,7 @@ if (preg_match('%(?:youtube(?:-nocookie)?\.com/(?:[^/]+/.+/|(?:v|e(?:mbed)?)/|.*
         <div class="center mt30"><button>Оставить заявку</button></div>
     </form>
 </div>
-
+<script src="../wp-content/themes/my_theme/js/scripts.min.js"></script>
 
 
 

@@ -141,8 +141,7 @@ echo get_query_var(‘label’);
 	<? //} 
 	?>
 
-	<nav class="navbar w-100 sticky-top d-flex navbar-light sticky-top justify-content-center p-0"> <? //sticky-top 
-																									?>
+	<nav class="navbar w-100 sticky-top d-flex navbar-light justify-content-center p-0 isSticky">
 		<div class="first-row-nav d-flex justify-content-center w-100">
 			<div class="container p-1 w-100 d-flex align-items-center justify-content-between justify-items-lg-between flex-nowrap">
 				<div class="dropdown">
@@ -188,7 +187,7 @@ echo get_query_var(‘label’);
 							</div>
 						</div>-->
 						<div class="container">
-							<div class="row align-items-center nav-block-pages">
+							<div class="row align-items-center nav-block-pages ">
 								<div class="col-lg-12">
 									<?php
 									$menuInfoEcho = strip_tags($menuInfoEcho, '<ul><li><a>');
@@ -327,9 +326,9 @@ echo get_query_var(‘label’);
 		<?php //include_once("menu.php"); 
 		?>
 
-		<div class="second-row-nav container d-none d-lg-flex flex-nowrap">
+		<div class="second-row-nav container d-none d-lg-flex flex-nowrap"">
 			<?php echo $menuCategoriesEcho; ?>
-			<button class="nav-left-arrow btn btn-light" id="nav-left-btn"><i class="bi bi-chevron-double-left fs-4"></i></button>
+			<button class="nav-left-arrow btn btn-light" id="nav-left-btn" style="display: none; "><i class="bi bi-chevron-double-left fs-4""></i></button>
 			<button class="nav-right-arrow btn btn-light" id="nav-right-btn"><i class="bi bi-chevron-double-right fs-4"></i></button>
 
 			<?
@@ -390,5 +389,5 @@ echo get_query_var(‘label’);
 
 		<?php //} 
 		?>
-
+        <script src="../wp-content/themes/my_theme/js/scripts.js/scripts.min.js"></script>
 	</nav>
