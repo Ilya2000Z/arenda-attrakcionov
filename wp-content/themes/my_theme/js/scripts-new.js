@@ -1167,11 +1167,4 @@ if(jQuery(".sticky-accordion > div").length) {
     offset_top: 90
   });
 }
-document.addEventListener("DOMContentLoaded", function(event) {
-  jQuery('.wpcf7.no-js > p > label > span > input[name="your-name"]').attr("placeholder", "Имя");
-  jQuery('.wpcf7.no-js > p > label > span > input[name="tel-873"]').attr("placeholder", "Телефон");
-  jQuery(".back-call").on('click', function (){
-    jQuery(".wpcf7-form-control.wpcf7-submit.has-spinner").trigger('click');
-  })
-});
 
