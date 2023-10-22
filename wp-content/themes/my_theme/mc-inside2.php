@@ -42,41 +42,41 @@ $cnt_list = get_field('cnt_list');function debug_to_console($data) {
         </nav>
     </div>
     <div class="container">
-        <h1 class="h1 title-with-margin">Мехенди на выпускном для ребенка на корпоратив</h1>
+        <h1 class="h1 title-with-margin"><?php the_field('name') ?></h1>
     </div>
     <section class="mc-inside2-top-section">
         <div class="container">
             <div class="description">
                 <div class="round-gray-block top-block">
-                    <p>Смета: <strong>250 000 Р</strong></p>
-                    <p>Гости: <strong>500 000 Р</strong></p>
+                    <p><?php the_field('price_title') ?> <strong><?php the_field('price') ?></strong></p>
+                    <p><?php the_field('guests_title') ?>: <strong><?php the_field('guests') ?></strong></p>
                 </div>
                 <div class="round-gray-block bottom-block">
-                    <h2 class="h1">Комплектация</h2>
+                    <h2 class="h1"><?php the_field('complect_title') ?></h2>
                     <div class="wrapper">
                         <div class="done-icon-with-text">
                             <div class="icon">✔</div>
-                            <a class="text" href="#">4 шатра Пагода</a>
+                            <a class="text" href="#"><?php the_field('complect1') ?></a>
                         </div>
                         <div class="done-icon-with-text">
                             <div class="icon">✔</div>
-                            <a class="text" href="#">200 Стулья Кьявари</a>
+                            <a class="text" href="#"><?php the_field('complect2') ?></a>
                         </div>
                         <div class="done-icon-with-text">
                             <div class="icon">✔</div>
-                            <a class="text" href="#">Фуд станция бургеры</a>
+                            <a class="text" href="#"><?php the_field('complect3') ?></a>
                         </div>
                         <div class="done-icon-with-text">
                             <div class="icon">✔</div>
-                            <a class="text" href="#">4 шатра Пагода</a>
+                            <a class="text" href="#"><?php the_field('complect4') ?></a>
                         </div>
                         <div class="done-icon-with-text">
                             <div class="icon">✔</div>
-                            <a class="text" href="#">200 Стулья Кьявари</a>
+                            <a class="text" href="#"><?php the_field('complect5') ?></a>
                         </div>
                         <div class="done-icon-with-text">
                             <div class="icon">✔</div>
-                            <a class="text" href="#">Фуд станция бургеры</a>
+                            <a class="text" href="#"><?php the_field('complect6') ?></a>
                         </div>
 
                     </div>
@@ -87,25 +87,25 @@ $cnt_list = get_field('cnt_list');function debug_to_console($data) {
                     <div class="swiper preview-block">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="../wp-content/themes/my_theme/images/slider2pic.jpg" alt=""/>
+                                <img src="<?php the_field('main_img') ?>" alt=""/>
                             </div>
                             <div class="swiper-slide">
-                                <img src="../wp-content/themes/my_theme/images/slider2pic.jpg" alt=""/>
+                                <img src="<?php the_field('gallery1') ?>" alt=""/>
                             </div>
                             <div class="swiper-slide">
-                                <img src="../wp-content/themes/my_theme/images/slider2pic.jpg" alt=""/>
+                                <img src="<?php the_field('gallery2') ?>" alt=""/>
                             </div>
                             <div class="swiper-slide">
-                                <img src="../wp-content/themes/my_theme/images/slider2pic.jpg" alt=""/>
+                                <img src="<?php the_field('gallery3') ?>" alt=""/>
                             </div>
                             <div class="swiper-slide">
-                                <img src="../wp-content/themes/my_theme/images/slider2pic.jpg" alt=""/>
+                                <img src="<?php the_field('gallery4') ?>" alt=""/>
                             </div>
                             <div class="swiper-slide">
-                                <img src="../wp-content/themes/my_theme/images/slider2pic.jpg" alt=""/>
+                                <img src="<?php the_field('gallery5') ?>" alt=""/>
                             </div>
                             <div class="swiper-slide">
-                                <img src="../wp-content/themes/my_theme/images/slider2pic.jpg" alt=""/>
+                                <img src="<?php the_field('gallery6') ?>" alt=""/>
                             </div>
 
                         </div>
@@ -114,28 +114,26 @@ $cnt_list = get_field('cnt_list');function debug_to_console($data) {
                         <div thumbsSlider="" class="swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="../wp-content/themes/my_theme/images/slider2pic.jpg" alt=""/>
+                                    <img src="<?php the_field('main_img') ?>" alt=""/>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="../wp-content/themes/my_theme/images/slider2pic.jpg" alt=""/>
+                                    <img src="<?php the_field('gallery1') ?>" alt=""/>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="../wp-content/themes/my_theme/images/slider2pic.jpg" alt=""/>
+                                    <img src="<?php the_field('gallery2') ?>" alt=""/>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="../wp-content/themes/my_theme/images/slider2pic.jpg" alt=""/>
+                                    <img src="<?php the_field('gallery3') ?>" alt=""/>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="../wp-content/themes/my_theme/images/slider2pic.jpg" alt=""/>
+                                    <img src="<?php the_field('gallery4') ?>" alt=""/>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="../wp-content/themes/my_theme/images/slider2pic.jpg" alt=""/>
+                                    <img src="<?php the_field('gallery5') ?>" alt=""/>
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="../wp-content/themes/my_theme/images/slider2pic.jpg" alt=""/>
+                                    <img src="<?php the_field('gallery6') ?>" alt=""/>
                                 </div>
-
-                            </div>
                         </div>
                         <div class="swiper-button-next">
                             <svg xmlns="http://www.w3.org/2000/svg" width="63" height="9" viewBox="0 0 63 9" fill="none">
@@ -155,21 +153,21 @@ $cnt_list = get_field('cnt_list');function debug_to_console($data) {
     </section>
     <div class="container">
         <div class="round-gray-block mb20">
-            <h2 class="h1">Задача</h2>
-            <p>Приносит множество специфических проблем, но и он же, проявляя здоровую рефлексию, предоставляет решения, отвечающие на эти вызовы своего времени. Только подумайте, еще каких-то сто лепредоставляет решения, отвечающие на эти вызовы своего времени. предоставляет решения, отвечающие на эти вызовы своего времени.предоставляет решения...</p>
-            <p>Приносит множество специфических проблем, но и он же, проявляя здоровую рефлексию, предоставляет решения, отвечающие на эти вызовы своего времени. Только подумайте, еще каких-то сто лепредоставляет решения, отвечающие на эти вызовы своего времени. предоставляет решения, отвечающие на эти вызовы своего времени.предоставляет решения...</p>
-        </div>
+            <h2 class="h1"><?php the_field('task') ?></h2>
+            <p><?php the_field('task_desk') ?></p>
+            <p><?php the_field('task_desk') ?></p>
+             </div>
         <div class="round-gray-block mb20">
-            <h2 class="h1">Решение</h2>
-            <p>Приносит множество специфических проблем, но и он же, проявляя здоровую рефлексию, предоставляет решения, отвечающие на эти вызовы своего времени. Только подумайте, еще каких-то сто лепредоставляет решения, отвечающие на эти вызовы своего времени. предоставляет решения, отвечающие на эти вызовы своего времени.предоставляет решения...</p>
-            <p>Приносит множество специфических проблем, но и он же, проявляя здоровую рефлексию, предоставляет решения, отвечающие на эти вызовы своего времени. Только подумайте, еще каких-то сто лепредоставляет решения, отвечающие на эти вызовы своего времени. предоставляет решения, отвечающие на эти вызовы своего времени.предоставляет решения...</p>
-            <p>Приносит множество специфических проблем, но и он же, проявляя здоровую рефлексию, предоставляет решения, отвечающие на эти вызовы своего времени. Только подумайте, еще каких-то сто лепредоставляет решения, отвечающие на эти вызовы своего времени. предоставляет решения, отвечающие на эти вызовы своего времени.предоставляет решения...</p>
-            <p>Приносит множество специфических проблем, но и он же, проявляя здоровую рефлексию, предоставляет решения, отвечающие на эти вызовы своего времени. Только подумайте, еще каких-то сто лепредоставляет решения, отвечающие на эти вызовы своего времени. предоставляет решения, отвечающие на эти вызовы своего времени.предоставляет решения. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Текста журчит, предложения наш. Ведущими, рекламных. Жизни дорогу там эта!</p>
-        </div>
+            <h2 class="h1"><?php the_field('solution') ?></h2>
+            <p><?php the_field('solution_desc') ?></p>
+            <p><?php the_field('solution_desc') ?></p>
+            <p><?php the_field('solution_desc') ?></p>
+            <p><?php the_field('solution_desc') ?></p>
+         </div>
     </div>
 
 </div>
-
+<script src="../wp-content/themes/my_theme/js/scripts.min.js"></script>
 <?php
 get_footer('new');
 ?>

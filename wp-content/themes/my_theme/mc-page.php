@@ -440,7 +440,7 @@ $cnt_list = get_field('cnt_list');function debug_to_console($data) {
     <section class="feedback-global-section">
         <div class="container">
             <h2 class="h1 title-with-margin">Оставьте заявку</h2>
-            <form class="feedback-global-form" style="padding: 10px 40px 10px 40px;">
+            <form class="feedback-global-form " style="padding: 10px 40px 10px 40px;">
                 <div class="left">
                     <input type="text" placeholder="Имя">
                     <input type="tel" placeholder="Телефон">
@@ -538,7 +538,7 @@ $cnt_list = get_field('cnt_list');function debug_to_console($data) {
                     <p><?php the_field('description2') ?></p>
                     <p><?php the_field('description2') ?></p>
                     <p><?php the_field('description2') ?></p>
-                    <p><?php the_field('description2') ?></p>
+                    <p><?php the_field('feedback_img7') ?></p>
                 </div>
             </div>
         </div>
