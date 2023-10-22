@@ -2558,7 +2558,7 @@ function sales_shortcode() {
 		$sale_slider = get_field('sale_slider', 'options');
 	}
 	//$sale_slider = get_field('sale_slider', 'options');
-	$output = '<div class="sales-slider__wrapper"><span class="title-headline">выгодные предложения</span><div class="sales-slider">';
+	$output = '<div class="sales-slider__wrapper"><span class="title-headline">Выгодные предложения</span><div class="sales-slider">';
 	foreach($sale_slider as $item) {
 		if ($item['color'] == 1){
 			$color = 'sale-blue-overlay-min.png';
@@ -3036,4 +3036,7 @@ function feedback_shortcode() {
     }
     $output .= '</div></div>';
     return $output;
+
+
+
 }

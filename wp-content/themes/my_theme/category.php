@@ -853,7 +853,7 @@ if (1 == 2) {
                             <div class="container">
                                 <h2 class="h1 title-with-margin">Выгодные предложения</h2>
                                 <div class="container">
-                                    <?= do_shortcode('[sales_shortcode]') ?>
+
                                 </div>
                                 <div class="three-items-slider">
                                     <div class="swiper">

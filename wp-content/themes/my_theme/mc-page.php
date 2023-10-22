@@ -51,9 +51,9 @@ $cnt_list = get_field('cnt_list');function debug_to_console($data) {
                 </nav>
                 <div class="wrapper">
                     <div class="top round-block">
-                        <h2 class="title">Мастер-классы для детей</h2>
+                        <h2 class="title"><?php the_field('title') ?></h2>
                         <div class="text-block">
-                            <p>Наши мастер-классы для детей - это возможность раскрыть творческий потенциал и провести увлекательное время вместе с друзьями. Мы стараемся создать вдохновляющую и поддерживающую атмосферу, чтобы каждый ребенок чувствовал себя особенным и уверенным в своих талантах.</p>
+                            <p><?php the_field('description') ?></p>
                         </div>
                     </div>
                     <div class="bottom round-block">
@@ -293,32 +293,33 @@ $cnt_list = get_field('cnt_list');function debug_to_console($data) {
     <section class="profitable-offers-section">
         <div class="container">
             <h2 class="h1 title-with-margin">Выгодные предложения</h2>
+
             <div class="three-items-slider instance-0">
                 <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
                     <div class="swiper-wrapper popup-gallery" id="swiper-wrapper-5904e6d90b00d1a0" aria-live="polite">
                         <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" style="width: 399.333px; margin-right: 26px;">
                             <a href="../wp-content/themes/my_theme/images/pic2.png" class="img-link">
-                                <img src="../wp-content/themes/my_theme/images/pic2.png" alt="">
+                               <img src=" <?php the_field('profit_img1') ?>" alt="">
                             </a>
                         </div>
                         <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" style="width: 399.333px; margin-right: 26px;">
                             <a href="../wp-content/themes/my_theme/images/pic2.png" class="img-link">
-                                <img src="../wp-content/themes/my_theme/images/pic2.png" alt="">
+                                <img src="<?php the_field('profit_img2') ?>" alt="">
                             </a>
                         </div>
                         <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" style="width: 399.333px; margin-right: 26px;">
                             <a href="../wp-content/themes/my_theme/images/pic2.png" class="img-link">
-                                <img src="../wp-content/themes/my_theme/images/pic2.png" alt="">
+                                <img src="<?php the_field('profit_img3') ?>" alt="">
                             </a>
                         </div>
                         <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" style="width: 399.333px; margin-right: 26px;">
                             <a href="../wp-content/themes/my_theme/images/pic2.png" class="img-link">
-                                <img src="../wp-content/themes/my_theme/images/pic2.png" alt="">
+                                <img src="<?php the_field('profit_img4') ?>" alt="">
                             </a>
                         </div>
                         <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" style="width: 399.333px; margin-right: 26px;">
                             <a href="../wp-content/themes/my_theme/images/pic2.png" class="img-link">
-                                <img src="../wp-content/themes/my_theme/images/pic2.png" alt="">
+                                <img src="<?php the_field('profit_img5') ?>" alt="">
                             </a>
                         </div>
 
@@ -345,39 +346,39 @@ $cnt_list = get_field('cnt_list');function debug_to_console($data) {
                     <div class="pictures">
                         <div class="team-person-card">
                             <div class="avatar">
-                                <img src="../wp-content/themes/my_theme/images/ava.jpg" alt="">
+                                <img src="<?php the_field('team_img1') ?>" alt="">
                             </div>
-                            <div class="name">Мария</div>
+                            <div class="name"><?php the_field('team_text1') ?></div>
                         </div>
                         <div class="team-person-card">
                             <div class="avatar">
-                                <img src="../wp-content/themes/my_theme/images/ava.jpg" alt="">
+                                <img src="<?php the_field('team_img2') ?>" alt="">
                             </div>
-                            <div class="name">Сигизмундроздофил</div>
+                            <div class="name"><?php the_field('team_text2') ?></div>
                         </div>
                         <div class="team-person-card">
                             <div class="avatar">
-                                <img src="../wp-content/themes/my_theme/images/ava.jpg" alt="">
+                                <img src="<?php the_field('team_img3') ?>" alt="">
                             </div>
-                            <div class="name">Анатолий</div>
+                            <div class="name"><?php the_field('team_text3') ?></div>
                         </div>
                         <div class="team-person-card">
                             <div class="avatar">
-                                <img src="../wp-content/themes/my_theme/images/ava.jpg" alt="">
+                                <img src="<?php the_field('team_img4') ?>" alt="">
                             </div>
-                            <div class="name">Айран-Жульбан-Углы</div>
+                            <div class="name"><?php the_field('team_text4') ?></div>
                         </div>
                         <div class="team-person-card">
                             <div class="avatar">
-                                <img src="../wp-content/themes/my_theme/images/ava.jpg" alt="">
+                                <img src="<?php the_field('team_img5') ?>" alt="">
                             </div>
-                            <div class="name">Мария</div>
+                            <div class="name"><?php the_field('team_text5') ?></div>
                         </div>
                         <div class="team-person-card">
                             <div class="avatar">
-                                <img src="../wp-content/themes/my_theme/images/ava.jpg" alt="">
+                                <img src="<?php the_field('team_img6') ?>" alt="">
                             </div>
-                            <div class="name">Мария</div>
+                            <div class="name"><?php the_field('team_text6') ?></div>
                         </div>
                     </div>
                 </div>
@@ -392,40 +393,40 @@ $cnt_list = get_field('cnt_list');function debug_to_console($data) {
                 <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
                     <div class="swiper-wrapper" id="swiper-wrapper-fdfd2b1eb2ffea1c" aria-live="polite">
                         <div class="swiper-slide held-mc-card swiper-slide-active" role="group" aria-label="1 / 5" style="width: 296.75px; margin-right: 21px;">
-                            <a href="#" class="img-link">
-                                <img src="../wp-content/themes/my_theme/images/pic3.jpg" alt="">
-                                <span class="text">Мехенди на выпускном для ребенка на корпоратив</span>
+                            <a href="<?php the_field('held-mc_link1') ?>" class="img-link">
+                                <img src="<?php the_field('held-mc_img1') ?>" alt="">
+                                <span class="text"><?php the_field('held-mc_text1') ?></span>
                             </a>
                         </div>
                         <div class="swiper-slide held-mc-card swiper-slide-active" role="group" aria-label="1 / 5" style="width: 296.75px; margin-right: 21px;">
-                            <a href="#" class="img-link">
-                                <img src="../wp-content/themes/my_theme/images/pic3.jpg" alt="">
-                                <span class="text">Мехенди на выпускном для ребенка на корпоратив</span>
+                            <a href="<?php the_field('held-mc_link2') ?>" class="img-link">
+                                <img src="<?php the_field('held-mc_img2') ?>" alt="">
+                                <span class="text"><?php the_field('held-mc_text2') ?></span>
                             </a>
                         </div>
                         <div class="swiper-slide held-mc-card swiper-slide-active" role="group" aria-label="1 / 5" style="width: 296.75px; margin-right: 21px;">
-                            <a href="#" class="img-link">
-                                <img src="../wp-content/themes/my_theme/images/pic3.jpg" alt="">
-                                <span class="text">Мехенди на выпускном для ребенка на корпоратив</span>
+                            <a href="<?php the_field('held-mc_link3') ?>" class="img-link">
+                                <img src="<?php the_field('held-mc_img3') ?>" alt="">
+                                <span class="text"><?php the_field('held-mc_text3') ?></span>
                             </a>
                         </div>
                         <div class="swiper-slide held-mc-card swiper-slide-active" role="group" aria-label="1 / 5" style="width: 296.75px; margin-right: 21px;">
-                            <a href="#" class="img-link">
-                                <img src="../wp-content/themes/my_theme/images/pic3.jpg" alt="">
-                                <span class="text">Мехенди на выпускном для ребенка на корпоратив</span>
+                            <a href="<?php the_field('held-mc_link4') ?>" class="img-link">
+                                <img src="<?php the_field('held-mc_img4') ?>" alt="">
+                                <span class="text"><?php the_field('held-mc_text4') ?></span>
                             </a>
                         </div>
                         <div class="swiper-slide held-mc-card swiper-slide-active" role="group" aria-label="1 / 5" style="width: 296.75px; margin-right: 21px;">
-                            <a href="#" class="img-link">
-                                <img src="../wp-content/themes/my_theme/images/pic3.jpg" alt="">
+                            <a href="<?php the_field('held-mc_link5') ?>" class="img-link">
+                                <img src="<?php the_field('held-mc_img5') ?>" alt="">
                                 <!-- думаю, размер этого текста, а именно количество символов надо регулировать на беке -->
-                                <span class="text">Мехенди на выпускном для ребенка на корпоратив бла бла бла бла бла бла блша харикришнахарихари</span>
+                                <span class="text"><?php the_field('held-mc_text5') ?></span>
                             </a>
                         </div>
                         <div class="swiper-slide held-mc-card swiper-slide-active" role="group" aria-label="1 / 5" style="width: 296.75px; margin-right: 21px;">
-                            <a href="#" class="img-link">
-                                <img src="../wp-content/themes/my_theme/images/pic3.jpg" alt="">
-                                <span class="text">Мехенди на выпускном для ребенка на корпоратив</span>
+                            <a href="<?php the_field('held-mc_link6') ?>" class="img-link">
+                                <img src="<?php the_field('held-mc_img6') ?>" alt="">
+                                <span class="text"><?php the_field('held-mc_text6') ?></span>
                             </a>
                         </div>
                     </div>
@@ -439,7 +440,7 @@ $cnt_list = get_field('cnt_list');function debug_to_console($data) {
     <section class="feedback-global-section">
         <div class="container">
             <h2 class="h1 title-with-margin">Оставьте заявку</h2>
-            <form class="feedback-global-form">
+            <form class="feedback-global-form" style="padding: 10px 40px 10px 40px;">
                 <div class="left">
                     <input type="text" placeholder="Имя">
                     <input type="tel" placeholder="Телефон">
@@ -477,25 +478,25 @@ $cnt_list = get_field('cnt_list');function debug_to_console($data) {
                 <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
                     <div class="swiper-wrapper popup-gallery" id="swiper-wrapper-e14cb101060dd6a1080" aria-live="polite">
                         <div class="swiper-slide review-slide swiper-slide-active" aria-live="polite" role="group" aria-label="1 / 7" style="margin-right: 30px;">
-                            <a class="img-link" href="../wp-content/themes/my_theme/images/review.jpg"><img src="../wp-content/themes/my_theme/images/review.jpg" alt=""></a>
+                            <a class="img-link" href="../wp-content/themes/my_theme/images/review.jpg"><img src="<?php the_field('feedback_img1') ?>" alt=""></a>
                         </div>
                         <div class="swiper-slide review-slide swiper-slide-active" aria-live="polite" role="group" aria-label="1 / 7" style="margin-right: 30px;">
-                            <a class="img-link" href="../wp-content/themes/my_theme/images/review.jpg"><img src="../wp-content/themes/my_theme/images/review.jpg" alt=""></a>
+                            <a class="img-link" href="../wp-content/themes/my_theme/images/review.jpg"><img src="<?php the_field('feedback_img2') ?>" alt=""></a>
                         </div>
                         <div class="swiper-slide review-slide swiper-slide-active" aria-live="polite" role="group" aria-label="1 / 7" style="margin-right: 30px;">
-                            <a class="img-link" href="../wp-content/themes/my_theme/images/review.jpg"><img src="../wp-content/themes/my_theme/images/review.jpg" alt=""></a>
+                            <a class="img-link" href="../wp-content/themes/my_theme/images/review.jpg"><img src="<?php the_field('feedback_img3') ?>" alt=""></a>
                         </div>
                         <div class="swiper-slide review-slide swiper-slide-active" aria-live="polite" role="group" aria-label="1 / 7" style="margin-right: 30px;">
-                            <a class="img-link" href="../wp-content/themes/my_theme/images/review.jpg"><img src="../wp-content/themes/my_theme/images/review.jpg" alt=""></a>
+                            <a class="img-link" href="../wp-content/themes/my_theme/images/review.jpg"><img src="<?php the_field('feedback_img4') ?>" alt=""></a>
                         </div>
                         <div class="swiper-slide review-slide swiper-slide-active" aria-live="polite" role="group" aria-label="1 / 7" style="margin-right: 30px;">
-                            <a class="img-link" href="../wp-content/themes/my_theme/images/review.jpg"><img src="../wp-content/themes/my_theme/images/review.jpg" alt=""></a>
+                            <a class="img-link" href="../wp-content/themes/my_theme/images/review.jpg"><img src="<?php the_field('feedback_img5') ?>" alt=""></a>
                         </div>
                         <div class="swiper-slide review-slide swiper-slide-active" aria-live="polite" role="group" aria-label="1 / 7" style="margin-right: 30px;">
-                            <a class="img-link" href="../wp-content/themes/my_theme/images/review.jpg"><img src="../wp-content/themes/my_theme/images/review.jpg" alt=""></a>
+                            <a class="img-link" href="../wp-content/themes/my_theme/images/review.jpg"><img src="<?php the_field('feedback_img6') ?>" alt=""></a>
                         </div>
                         <div class="swiper-slide review-slide swiper-slide-active" aria-live="polite" role="group" aria-label="1 / 7" style="margin-right: 30px;">
-                            <a class="img-link" href="../wp-content/themes/my_theme/images/review.jpg"><img src="../wp-content/themes/my_theme/images/review.jpg" alt=""></a>
+                            <a class="img-link" href="../wp-content/themes/my_theme/images/review.jpg"><img src="<?php the_field('feedback_img7') ?>" alt=""></a>
                         </div>
 
 
@@ -513,15 +514,15 @@ $cnt_list = get_field('cnt_list');function debug_to_console($data) {
             <h2 class="h1 title-with-margin">Часто задаваемые вопросы</h2>
             <div class="faq-wrapper">
                 <div class="spoiler-block">
-                    <div class="spoiler-title">Что такое выездные мастер-классы?</div>
+                    <div class="spoiler-title"><?php the_field('question') ?></div>
                     <div class="spoiler-content">
-                        <p>Выездные мастер-классы - это формат обучения, при котором наша студия приезжает к вам на место и проводит мастер-классы по выбранной теме.</p>
+                        <p><?php the_field('answer') ?></p>
                     </div>
                 </div>
                 <div class="spoiler-block">
-                    <div class="spoiler-title">Что такое выездные мастер-классы? Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты.</div>
+                    <div class="spoiler-title"><?php the_field('question1') ?></div>
                     <div class="spoiler-content">
-                        <p>Выездные мастер-классы - это формат обучения, при котором наша студия приезжает к вам на место и проводит мастер-классы по выбранной теме.</p>
+                        <p><?php the_field('answer1') ?></p>
                     </div>
                 </div>
             </div>
@@ -530,14 +531,14 @@ $cnt_list = get_field('cnt_list');function debug_to_console($data) {
 
     <section class="seo-section">
         <div class="container">
-            <h2 class="h1 title-with-margin">Заголовок текста</h2>
+            <h2 class="h1 title-with-margin"><?php the_field('title2') ?></h2>
 
             <div class="add-padding-border">
                 <div class="text" title="Показать больше текста">
-                    <p>Организовать корпоратив на природе, тимбилдинг или массовый праздник не сложно. Главное, чтобы гостям не было скучно. Заполнить досуг поможет аттракцион в аренду. Это хороший способ провести соревнования среди взрослых, занять веселыми играми детей. В компании Art-Active для праздника есть надувные батуты, интерактивные спартакиады, скалодром, выездные фотозоны. Доставка по Москве, безопасный монтаж и качество обслуживания.</p>
-                    <p>Далеко-далеко за словесными горами, в стране гласных и согласных, живут рыбные тексты. Наш ее она вскоре, безорфографичный имеет возвращайся путь своего домах приставка но напоивший всемогущая предупредила мир которое, вопрос оксмокс пор точках рыбными там языком. Знаках первую моей дорогу, даль которое жаренные домах последний себя встретил использовало вершину свою рукописи за.</p>
-                    <p>Далеко-далеко за словесными горами, в стране гласных и согласных, живут рыбные тексты. Наш ее она вскоре, безорфографичный имеет возвращайся путь своего домах приставка но напоивший всемогущая предупредила мир которое, вопрос оксмокс пор точках рыбными там языком. Знаках первую моей дорогу, даль которое жаренные домах последний себя встретил использовало вершину свою рукописи за.</p>
-                    <p>Далеко-далеко за словесными горами, в стране гласных и согласных, живут рыбные тексты. Наш ее она вскоре, безорфографичный имеет возвращайся путь своего домах приставка но напоивший всемогущая предупредила мир которое, вопрос оксмокс пор точках рыбными там языком. Знаках первую моей дорогу, даль которое жаренные домах последний себя встретил использовало вершину свою рукописи за.</p>
+                    <p><?php the_field('description2') ?></p>
+                    <p><?php the_field('description2') ?></p>
+                    <p><?php the_field('description2') ?></p>
+                    <p><?php the_field('description2') ?></p>
                 </div>
             </div>
         </div>
@@ -546,9 +547,11 @@ $cnt_list = get_field('cnt_list');function debug_to_console($data) {
 
 </div>
 </div>
+<script src="../wp-content/themes/my_theme/js/scripts.min.js"></script>
 <?php
 get_footer('new');
 ?>
+
 <script>
     var $slickEl = $('.custom-modal .slider');
     $slickEl.slick({
